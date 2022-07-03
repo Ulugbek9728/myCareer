@@ -62,7 +62,7 @@ const Login = props => {
                         <div className="bottom-fields">
                             <Button className="custom-btn" onClick={() => {
                                 dispatch(signedWizardNextSteps());
-                                navigate(RoutesPath.templates)
+                                navigate("/complete")
                             }}>Continue</Button>
                         </div>
                         <div className="bottom-title">Or continue with</div>
