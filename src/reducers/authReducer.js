@@ -88,7 +88,7 @@ const reducers = {
     }
   },
   [REMOVE_SAVED_WORK_EXPERIENCE](state, {id}) {
-    const _updatedWorkExperience = state.savedWorkExperiences.filter(item => item.id !== id)
+    const _updatedWorkExperience = state.savedWorkExperiences.filter(item => item.id !== id);
     return {
       ...state,
       savedWorkExperiences: _updatedWorkExperience
@@ -111,7 +111,7 @@ const reducers = {
         workExperience.description = data.description
       }
       return workExperience
-    })
+    });
     return {
       ...state,
       savedWorkExperiences: _edited,

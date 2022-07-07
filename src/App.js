@@ -11,7 +11,6 @@ import AboutUs from "./components/AboutUs";
 import {displayCircle} from "./actions/careerAction";
 import PostJop2 from "./components/postJop/postJop2";
 import PostJop3 from "./components/postJop/postJop3";
-import AddCompany from "./components/add-company";
 import ProfileCompany from "./components/profile-company";
 import BestMatches from "./components/postJop/BestMatches";
 import NewJops from "./components/postJop/NewJops";
@@ -28,6 +27,8 @@ import NewTalants from "./components/talants/NewTalants";
 import Saved from "./components/talants/Saved";
 import SignUpPage from "./components/sign-up-page";
 import SignUp from "./components/signUP";
+import CompleteForm from "./components/completeForm/CompleteForm";
+import CompleteCompany from "./components/completeCampany/CompleteCompany";
 
 const enhancer = connect(
     ({resumes: {doneResumes}}) =>
@@ -45,12 +46,13 @@ const App = props => {
 
     return (
         <div className="app-wrapper">
-
             <Routes>
                 <Route path={RoutesPath.home} element={<Home addedTopMargin={addedTopMargin}/>}/>
                 <Route path={RoutesPath.login} element={<Login/>}/>
                 <Route path={RoutesPath.signUp} element={<SignUp/>}/>
                 <Route path={RoutesPath.templates} element={<Personalization/>}/>
+                <Route path={RoutesPath.complete} element={<CompleteForm/>}/>
+                <Route path={RoutesPath.companyCom} element={<CompleteCompany/>}/>
                 <Route path={RoutesPath.postJop} element={<PostJop/>}/>
                 <Route path={RoutesPath.postJop2} element={<PostJop2/>}/>
                 <Route path={RoutesPath.postJop3} element={<PostJop3/>}/>
@@ -60,7 +62,6 @@ const App = props => {
                 <Route onClick={()=>{ dispatch(displayCircle()) }} path={RoutesPath.postJop1} element={<PostJop1/>}/>
                 <Route onClick={()=>{ dispatch(displayCircle()) }} path={RoutesPath.aboutUs} element={<AboutUs/>}/>
                 <Route path={RoutesPath.aboutUs} element={<AboutUs/>}/>
-                <Route path={RoutesPath.addCompany} element={<AddCompany/>}/>
                 <Route path={RoutesPath.profileCompany} element={<ProfileCompany/>}/>
                 <Route element={<NotFound/>}/>
                 <Route path={RoutesPath.myCv} element={<MyCv/>}/>
@@ -72,11 +73,6 @@ const App = props => {
                 <Route path={RoutesPath.NewTalants} element={<NewTalants/>}/>
                 <Route path={RoutesPath.Saved} element={<Saved/>}/>
                 <Route path={RoutesPath.signUpPage} element={<SignUpPage/>}/>
-
-
-                {/*<div className="done-resumes">*/}
-                {/*  <Resumes/>*/}
-                {/*</div>*/}
             </Routes>
             <ToastContainer/>
         </div>

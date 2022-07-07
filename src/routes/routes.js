@@ -22,6 +22,8 @@ const RoutesPath = {
   Saved:"/Saved",
   signUpPage:"/signUpPage",
   signUp:"/SignUp",
+  complete:"/complete",
+  companyCom:"/companyCom",
 
 };
 

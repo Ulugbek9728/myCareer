@@ -16,7 +16,6 @@ function SignUp(props) {
             <div className={"sign-in"}>
                 <SignUpCard/>
             </div>
-
            <AnimeCarusel/>
         </div>
     );

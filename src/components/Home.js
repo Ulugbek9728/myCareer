@@ -73,21 +73,20 @@ const Home = () => {
 
     };
 
-    return (
-
+  return (
         <div className="home-wrapper" id="overflow-y-scroll" onWheel={onScroll}>
             <NavbarBox/>
-            <div
-                className={margin === 0 ? "pattern" : margin === -100
-                    ? "pattern search-talent-pattern" : margin === -200
-                        ? "pattern post-job-pattern" : "pattern contact-us-pattern"
-                }>
-                <img src="./images/white-ell1.svg" alt="pattern"/>
-                <img src="./images/white-ell2.svg" alt="pattern"/>
-                <img src="./images/white-ell3.svg" alt="pattern"/>
-                <img src="./images/white-ell4.svg" alt="pattern"/>
-                <img src="./images/white-ell5.svg" alt="pattern"/>
-            </div>
+          <div
+              className={margin === 0 ? "pattern" : margin === -100
+                  ? "pattern search-talent-pattern" : margin === -200
+                      ? "pattern post-job-pattern" : "pattern contact-us-pattern"
+              }>
+            <img src="./images/white-ell1.svg" alt="pattern"/>
+            <img src="./images/white-ell2.svg" alt="pattern"/>
+            <img src="./images/white-ell3.svg" alt="pattern"/>
+            <img src="./images/white-ell4.svg" alt="pattern"/>
+            <img src="./images/white-ell5.svg" alt="pattern"/>
+          </div>
             {margin === 0 ? <div className="main-home-page-box">
                 <div className="company-name-title"
                      data-aos="fade-right"

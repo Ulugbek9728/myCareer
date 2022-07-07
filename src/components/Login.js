@@ -13,11 +13,11 @@ const Login = props => {
             <div className="logoBg">
                 <img src="./images/Napa_logo_white.svg" alt=""
                      onClick={() =>{navigate(RoutesPath.home)}}/>
-            </div>
             <div className={"sign-in"}>
                 <LoginCard/>
             </div>
             <AnimeCarusel/>
+        </div>
         </div>
     );
 };

@@ -22,7 +22,7 @@ const SignUpPage = () => {
                 </Link>
                 <div className="row komputer">
                     <div className="col-6">
-                        <Link to={RoutesPath.login} className="text-black card_jop">
+                        <Link to={RoutesPath.complete} className="text-black card_jop">
                             <div className="d-flex align-items-center">
                                 <div className="me-3"><img className="w-100" src="/images/clock.png" alt=""/></div>
                                 <h6 className="mt-1">Freelancer</h6>
@@ -30,7 +30,7 @@ const SignUpPage = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et ex iusto magni numquam
                                 quaerat.</p>
                         </Link>
-                        <Link to={RoutesPath.addCompany} className="card_jop1 text-black">
+                        <Link to={RoutesPath.companyCom} className="card_jop1 text-black">
                             <div className="d-flex align-items-center">
                                 <div className="me-3"><img className="w-100" src="/images/comp.png" alt=""/></div>
                                 <h6>Company</h6>
