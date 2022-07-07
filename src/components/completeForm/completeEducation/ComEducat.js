@@ -15,22 +15,21 @@ function ComEducat(props) {
     const [isComplete, setIsComplete] = useState("");
     const [studyType, setStudyType] = useState("");
     const [lacation, setLacation] = useState("");
-    const [tagName, setTagName] = useState("");
     const [start, setStart] = useState("");
     const [end, setEnd] = useState("");
 
 
-    const [dataList, setDataList] = useState([]);
+    const [dataList1, setDataList1] = useState([]);
 
     const addTask = () =>{
         if (school.trim().length > 0, degree.trim().length > 0, isComplete !== false, start !== "дд.мм.гггг", end !== "дд.мм.гггг",
-        tagName.trim().length > 0,studyType.trim().length>0,lacation.trim().length>0){
+        studyType.trim().length>0,lacation.trim().length>0){
             setModal(false);
-            const newTask = dataList;
+            const newTask = dataList1;
             let id = Date.now();
-            newTask.push({id:id, school,degree,isComplete,start,end,tagName,studyType,lacation});
-            setDataList(newTask)
-            setSchool(""); setTagName(""); setEnd(""); setStart(""); setDegree("");setStudyType("");
+            newTask.push({id:id, school,degree,isComplete,start,end,studyType,lacation});
+            setDataList1(newTask)
+            setSchool(""); setEnd(""); setStart(""); setDegree("");setStudyType("");
             setLacation("")
         }
         else {
@@ -40,10 +39,10 @@ function ComEducat(props) {
 
 
     const deleteTask = (id)=>{
-        const index = dataList.findIndex(item=> item.id == id);
-        const myData = [...dataList];
+        const index = dataList1.findIndex(item=> item.id == id);
+        const myData = [...dataList1];
         myData.splice(index,1);
-        setDataList(myData)
+        setDataList1(myData)
     };
 
 
@@ -56,7 +55,7 @@ function ComEducat(props) {
                 Just head on to the next page.
             </p>
             {
-                dataList.map((item, index)=>(
+                dataList1.map((item, index)=>(
                     <div className="map-modal mt-2">
                         <div className="w-75">
                             <p className="comName">{item.school}</p>
@@ -78,10 +77,7 @@ function ComEducat(props) {
             </button>
 
             <Modal isOpen={modal} toggle={toggle}>
-                {JSON.stringify(school)}
-                {JSON.stringify(lacation)}
-                {JSON.stringify(studyType)}
-                {JSON.stringify(degree)}
+
                 <ModalHeader toggle={toggle}>Add Education History</ModalHeader>
                 <ModalBody>
                     <input onChange={(e) => setSchool(e.target.value)} placeholder="School name"

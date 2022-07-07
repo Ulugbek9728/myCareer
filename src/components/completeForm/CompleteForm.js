@@ -4,7 +4,10 @@ import "./ffff.scss"
 import ModalCom from "./completeModal/ModalCom";
 import ComEducat from "./completeEducation/ComEducat";
 import VebsiteCom from "./completeWeb/VebsiteCom";
+import Carousel from 'react-elastic-carousel'
 import CompRezume from "./RezueComple/CompRezume";
+import Personalization from "../Personalization";
+import FirstTemplateResume from "../resumeTemplates/FirstTemplateResume";
 
 
 function progressfirst(){
@@ -16,12 +19,12 @@ function progressfirst(){
     var text2 = document.getElementById("progress-text2");
     text.style.opacity = "0";
     text2.style.opacity = "1";
-    one.style.top = "33.4%";
+    one.style.top = "34%";
     one.style.backgroundColor = "#1D71B8";
     one.style.border = "3px solid #FFFFFF";
     firstCard.style.bottom = "110%";
     secondCard.style.bottom = "20%";
-    two.style.top = "60%";
+    two.style.top = "68%";
     two.style.backgroundColor = "#FFFFFF";
     two.style.border = "7px solid #4169E1"
 }
@@ -34,12 +37,12 @@ function progresssecond(){
     var text3 = document.getElementById("progress-text3");
     text2.style.opacity = "0";
     text3.style.opacity = "1";
-    two.style.top = "35.4%";
+    two.style.top = "37%";
     two.style.backgroundColor = "#1D71B8"
     two.style.border = "3px solid #FFFFFF"
     secondCard.style.bottom = "110%"
     thirdCard.style.bottom = "10%"
-    three.style.top = "60%"
+    three.style.top = "68%"
     three.style.backgroundColor = "#FFFFFF"
     three.style.border = "7px solid #4169E1"
 }
@@ -52,12 +55,12 @@ function progressthird(){
     var text3 = document.getElementById("progress-text3");
     text3.style.opacity = "0";
     text4.style.opacity = "1";
-    three.style.top = "37.4%"
+    three.style.top = "40%"
     three.style.backgroundColor = "#1D71B8"
     three.style.border = "3px solid #FFFFFF"
     thirdCard.style.bottom = "130%";
     fourthCard.style.bottom = "20%";
-    four.style.top = "60%"
+    four.style.top = "68%"
     four.style.backgroundColor = "#FFFFFF"
     four.style.border = "7px solid #4169E1"
 }
@@ -70,12 +73,12 @@ function progressfourth(){
     var text5 = document.getElementById("progress-text5");
     text5.style.opacity = "1";
     text4.style.opacity = "0";
-    four.style.top = "39.4%"
+    four.style.top = "43%"
     four.style.backgroundColor = "#1D71B8"
     four.style.border = "3px solid #FFFFFF"
     fourthCard.style.bottom = "110%";
     fifthCard.style.bottom = "25%";
-    five.style.top = "60%"
+    five.style.top = "68%"
     five.style.backgroundColor = "#FFFFFF"
     five.style.border = "7px solid #4169E1"
 }
@@ -88,12 +91,12 @@ function progressfifth(){
     var text5 = document.getElementById("progress-text5");
     text5.style.opacity = "0";
     text6.style.opacity = "1";
-    five.style.top = "41.4%"
+    five.style.top = "46%"
     five.style.backgroundColor = "#1D71B8"
     five.style.border = "3px solid #FFFFFF"
     fifthCard.style.bottom = "110%";
     sixthCard.style.bottom = "25%";
-    six.style.top = "60%"
+    six.style.top = "68%"
     six.style.backgroundColor = "#FFFFFF"
     six.style.border = "7px solid #4169E1"
 }
@@ -106,12 +109,12 @@ function progresssixth(){
     var text7 = document.getElementById("progress-text7");
     text7.style.opacity = "1";
     text6.style.opacity = "0";
-    six.style.top = "43.3%"
+    six.style.top = "49%"
     six.style.backgroundColor = "#1D71B8"
     six.style.border = "3px solid #FFFFFF"
     seventhCard.style.bottom = "10%";
     sixthCard.style.bottom = "110%";
-    seven.style.top = "60%"
+    seven.style.top = "68%"
     seven.style.backgroundColor = "#FFFFFF"
     seven.style.border = "7px solid #4169E1"
 }
@@ -126,12 +129,12 @@ function progressseventh(){
     secondline.style.opacity = "0";
     text7.style.opacity = "0";
     text8.style.opacity = "1";
-    seven.style.top = "45.1%"
+    seven.style.top = "52%"
     seven.style.backgroundColor = "#1D71B8"
     seven.style.border = "3px solid #FFFFFF"
     eighthCard.style.bottom = "4%";
     seventhCard.style.bottom = "110%";
-    eight.style.top = "60%"
+    eight.style.top = "68%"
     eight.style.backgroundColor = "#FFFFFF"
     eight.style.border = "7px solid #4169E1"
 }
@@ -149,7 +152,7 @@ function progresssecondback(){
     one.style.border = "7px solid #4169E1";
     firstCard.style.bottom = "17%";
     secondCard.style.bottom = "-75%";
-    two.style.top = "81%";
+    two.style.top = "97%";
     two.style.backgroundColor = "#1D71B8";
     two.style.border = "3px solid #FFFFFF"
 }
@@ -162,12 +165,12 @@ function progressthirdback(){
     var text3 = document.getElementById("progress-text3");
     text2.style.opacity = "1";
     text3.style.opacity = "0";
-    two.style.top = "60%";
+    two.style.top = "68%";
     two.style.backgroundColor = "#FFFFFF"
     two.style.border = "7px solid #4169E1"
     secondCard.style.bottom = "20%"
     thirdCard.style.bottom = "-90%"
-    three.style.top = "83.8%"
+    three.style.top = "100%"
     three.style.backgroundColor = "#1D71B8"
     three.style.border = "3px solid #FFFFFF"
 }
@@ -180,12 +183,12 @@ function progressfourthback(){
     var text3 = document.getElementById("progress-text3");
     text4.style.opacity = "0";
     text3.style.opacity = "1";
-    three.style.top = "60%";
+    three.style.top = "68%";
     three.style.backgroundColor = "#FFFFFF"
     three.style.border = "7px solid #4169E1"
     thirdCard.style.bottom = "10%";
     fourthCard.style.bottom = "-75%"
-    four.style.top = "86%"
+    four.style.top = "103%"
     four.style.backgroundColor = "#1D71B8"
     four.style.border = "3px solid #FFFFFF"
 }
@@ -198,12 +201,12 @@ function progressfifthback(){
     var text5 = document.getElementById("progress-text5");
     text4.style.opacity = "1";
     text5.style.opacity = "0";
-    four.style.top = "60%";
+    four.style.top = "68%";
     four.style.backgroundColor = "#FFFFFF"
     four.style.border = "7px solid #4169E1"
     fourthCard.style.bottom = "20%"
     fifthCard.style.bottom = "-75%"
-    five.style.top = "88.6%"
+    five.style.top = "106%"
     five.style.backgroundColor = "#1D71B8"
     five.style.border = "3px solid #FFFFFF"
 }
@@ -216,12 +219,12 @@ function progresssixthback(){
     var text5 = document.getElementById("progress-text5");
     text6.style.opacity = "0";
     text5.style.opacity = "1";
-    five.style.top = "60%";
+    five.style.top = "68%";
     five.style.backgroundColor = "#FFFFFF"
     five.style.border = "7px solid #4169E1"
     fifthCard.style.bottom = "20%"
     sixthCard.style.bottom = "-75%"
-    six.style.top = "91%"
+    six.style.top = "109%"
     six.style.backgroundColor = "#1D71B8"
     six.style.border = "3px solid #FFFFFF"
 }
@@ -234,12 +237,12 @@ function progressseventhback(){
     var text7 = document.getElementById("progress-text7");
     text6.style.opacity = "1";
     text7.style.opacity = "0";
-    six.style.top = "60%";
-    six.style.backgroundColor = "#FFFFFF"
+    six.style.top = "68%";
+    six.style.backgroundColor = "#FFFFFF";
     six.style.border = "7px solid #4169E1"
     sixthCard.style.bottom = "20%"
     seventhCard.style.bottom = "-90%"
-    seven.style.top = "93.6%"
+    seven.style.top = "112%"
     seven.style.backgroundColor = "#1D71B8"
     seven.style.border = "3px solid #FFFFFF"
 }
@@ -254,24 +257,18 @@ function progresseighthback(){
     secondline.style.opacity = "1";
     text8.style.opacity = "0";
     text7.style.opacity = "1";
-    seven.style.top = "60%";
+    seven.style.top = "68%";
     seven.style.backgroundColor = "#FFFFFF"
     seven.style.border = "7px solid #1D71B8"
     seventhCard.style.bottom = "10%"
     eighthCard.style.bottom = "-95%"
-    eight.style.top = "96%"
+    eight.style.top = "115%"
     eight.style.backgroundColor = "#1D71B8"
     eight.style.border = "3px solid #FFFFFF"
 }
 
 
-function CompleteForm() {
-
-    const [user, setUser] = useState({
-        firstName:"",
-        name:"",
-        image:""
-    });
+function CompleteForm(props) {
 
     const [inputList, setInputList] = useState([{language:"", level:""}]);
 
@@ -280,7 +277,7 @@ function CompleteForm() {
     }
 
     const handleInputChange = (e, index) =>{
-        const {name, value} = e.target;
+        const {name,  value} = e.target;
         const list = [...inputList];
         list[index][name] = value;
         setInputList(list)
@@ -307,8 +304,8 @@ function CompleteForm() {
         setIcon(true)
     }
 
-    const [tags, setTags] = useState([])
-    const [hobs, setHobs] = useState([])
+    const [tags, setTags] = useState([]);
+    const [hobs, setHobs] = useState([]);
 
     function handleKeyDown(e) {
         if (e.key !== 'Enter')return;
@@ -332,17 +329,35 @@ function CompleteForm() {
     function removeHop(index) {
         setHobs(hobs.filter((el, i) => i !== index))
     }
+    const [user, setUser] = useState({
+        firstName:"",
+        lastName:"",
+        email:"",
+        numbers:"",
+        image:"",
+        name:"",
+        countrySelect:"",
+        regionSelect:"",
+        StreetApp:"",
+        dagreeLavel:"",
+        dateBirth:"",
+        descrobe:"",
+    });
     
   return (
     <>
         <div className="animations-image-all">
-            <img className="image image1" src="./images/white-ell1.svg" alt="pattern"/>
-            <img className="image image2" src="./images/white-ell2.svg" alt="pattern"/>
-            <img className="image image3" src="./images/white-ell3.svg" alt="pattern"/>
-            <img className="image image4" src="./images/white-ell4.svg" alt="pattern"/>
-            <img className="image image5" src="./images/white-ell5.svg" alt="pattern"/>
+            <div className= "pattern11">
+                <img src="./images/white-ell1.svg" alt="pattern"/>
+                <img src="./images/white-ell2.svg" alt="pattern"/>
+                <img src="./images/white-ell3.svg" alt="pattern"/>
+                <img src="./images/white-ell4.svg" alt="pattern"/>
+                <img src="./images/white-ell5.svg" alt="pattern"/>
+            </div>
         </div>
     <div className="wrapper">
+       <div className="position-absolute">
+       </div>
             <div className="main-content">
                 <div className="first-card card1" id="first-card">
                     <div onChange={baseImage} className="upload-image">
@@ -360,17 +375,17 @@ function CompleteForm() {
                             </div>
                             <div>
                                 <label className="mt-4 label-style" htmlFor="">E-mail</label>
-                                <input className="form-control inputs-all" type="e-mail" placeholder="E-mail"/>
+                                <input onChange={(e)=>setUser({...user, email: e.target.value})} className="form-control inputs-all" type="e-mail" placeholder="E-mail"/>
                             </div>
                         </div>
                         <div className="left-input">
                             <div>
                                 <label className="mt-4 label-style" htmlFor="">Lastname</label>
-                                <input  onChange={(e)=>setUser({...user, firstName: e.target.value})} className="form-control inputs-all" type="text" placeholder="Lastname"/>
+                                <input  onChange={(e)=>setUser({...user, lastName: e.target.value})} className="form-control inputs-all" type="text" placeholder="Lastname"/>
                             </div>
                             <div>
                                 <label className="mt-4 label-style" htmlFor="">Phone number</label>
-                                <input className="form-control inputs-all" type="number" placeholder="+xxx (xx) xxx- xx-xx"/>
+                                <input onChange={(e)=>setUser({...user, numbers:e.target.value})} className="form-control inputs-all" type="number" placeholder="+xxx (xx) xxx- xx-xx"/>
                                 <button className="btn btn-next-to1 mt-3" onClick={progressfirst}>Next</button>
                             </div>
                         </div>
@@ -386,26 +401,26 @@ function CompleteForm() {
                     <div className="all-r-l-input">
                         <div className="right-input">
                             <label className="mt-4 label-style" htmlFor="">Living address</label>
-                            <select className="form-select  form-control inputs-all" name="" id="">
-                                <option value="">Uzbekistan</option>
-                                <option value="">USA</option>
-                                <option value="">Russia</option>
+                            <select onChange={(e)=>setUser({...user, countrySelect: e.target.value})} className="form-select  form-control inputs-all" name="" id="">
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="USA">USA</option>
+                                <option value="Russia">Russia</option>
                             </select>
                         </div>
                         <div className="left-input">
                             <div>
                                 <label className="mt-4 label-style" htmlFor="">Region</label>
-                                <select className="form-select form-control inputs-all" name="" id="">
-                                    <option value="">Toshken</option>
-                                    <option value="">Andijon</option>
-                                    <option value="">Fargona</option>
+                                <select onChange={(e)=>setUser({...user, regionSelect: e.target.value})} className="form-select form-control inputs-all" name="" id="">
+                                    <option value="Toshken">Toshken</option>
+                                    <option value="Andijon">Andijon</option>
+                                    <option value="Fargona">Fargona</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div>
                         <label className="mt-4 label-style" htmlFor="">Street, apartment</label>
-                        <input placeholder="Street, apartment" className="form-control inputs-all1" type="text"/>
+                        <input onChange={(e)=>setUser({...user, StreetApp:e.target.value})} placeholder="Street, apartment" className="form-control inputs-all1" type="text"/>
                     </div>
                     <div className="all-btn-d-flex">
                         <button className="btn btn-next-to-bac" onClick={progresssecondback}>Back</button>
@@ -419,26 +434,26 @@ function CompleteForm() {
                     <div className="all-r-l-input">
                         <div className="right-input">
                             <label className="mt-4 label-style" htmlFor="">Select your Positions</label>
-                            <select className="form-select form-control inputs-all" name="" id="">
-                                <option value="">Frontend</option>
-                                <option value="">Backend</option>
-                                <option value="">Web designer</option>
+                            <select onChange={(e)=>setUser({...user, dagreeLavel:e.target.value})} className="form-select form-control inputs-all" name="" id="">
+                                <option value="Frontend">Frontend</option>
+                                <option value="Backend">Backend</option>
+                                <option value="Web designer">Web designer</option>
                             </select>
                         </div>
                         <div className="left-input">
                             <div>
                                 <label className="mt-4 label-style" htmlFor="">Date of birth</label>
-                                <input type="date" className="form-control inputs-all"/>
+                                <input onChange={(e)=>setUser({...user, dateBirth:e.target.value})} type="date" className="form-control inputs-all"/>
                             </div>
                         </div>
                     </div>
                     <div>
                         <label className="label-style mt-4" htmlFor="">Write down your skills</label>
                         <div>
-                            <div className="tag-input-box form-control">
+                            <div  className="tag-input-box form-control">
                                 {
-                                    tags.map((tag, index)=>(
-                                        <div className="tag-item " key={index}>
+                                   tags && tags.map((tag, index)=>(
+                                        <div className="tag-item">
                                             <span className="text">{tag}</span>
                                             <span onClick={()=>removeTag(index)} className="close">x</span>
                                         </div>
@@ -451,7 +466,7 @@ function CompleteForm() {
                     <div>
                         <label className="label-style mt-4" htmlFor="">Hobbies</label>
                         <div>
-                            <div className="hob-input-box inputs-all1 form-control">
+                            <div className="hob-input-box  form-control">
                                 {
                                     hobs.map((hobs, index)=>(
                                         <div className="hob-item" key={index}>
@@ -466,7 +481,7 @@ function CompleteForm() {
                         </div>
                     </div>
                     <div>
-                        <textarea  className="form-control mt-4 " placeholder="Describe yourself to buyers" name="" id="" cols="30" rows="6"></textarea>
+                        <textarea onChange={(e)=>setUser({...user, descrobe:e.target.value})} className="form-control mt-4 " placeholder="Describe yourself to buyers" name="" id="" cols="30" rows="6"></textarea>
                     </div>
                     <div className="all-btn-d-flex">
                         <button className="btn btn-next-to-bac" onClick={progressthirdback}>Back</button>
@@ -486,10 +501,10 @@ function CompleteForm() {
                                 <div className="right-input">
 
                                     <select onChange={e => handleInputChange(e, i)} className="form-select form-control inputs-all"
-                                            name="language" id="">
-                                        <option value="">English</option>
-                                        <option value="">Russian</option>
-                                        <option value="">Uzbek</option>
+                                            name="language" >
+                                        <option value="English">English</option>
+                                        <option value="Russian">Russian</option>
+                                        <option value="Uzbek">Uzbek</option>
                                     </select>
                                 </div>
                                 {
@@ -498,8 +513,8 @@ function CompleteForm() {
                                 }
                                 <div className="left-input">
                                     <div>
-                                        <select onChange={e => handleInputChange(e, i)}
-                                                className="form-select form-control inputs-all " name="level" id="">
+                                        <select onClick={e => handleInputChange(e, i)}
+                                                className="form-select form-control inputs-all " name="level">
                                             <option value="">A-1 Beginner</option>
                                             <option value="">A-2 Elementary</option>
                                             <option value="">B-1 Intermediate</option>
@@ -521,7 +536,7 @@ function CompleteForm() {
                 <div className="fifth-card card1" id="fifth-card">
                     <div>
                         <div>
-                            <ModalCom/>
+                            <ModalCom />
                         </div>
                     </div>
                     <div className="all-btn-d-flex">
@@ -544,7 +559,58 @@ function CompleteForm() {
                     </div>
                 </div>
                 <div className="eighth-card card1" id="eighth-card">
-                    <CompRezume/>
+                    <p className="write-about">Select your rezume design</p>
+                    <p className="complete-your">
+                        Your resume is ready! You need to choose one of this templates and all your info will be filled in it already.
+                    </p>
+                    <Carousel
+                        itemsToShow={2}>
+                        <div className="image-carousel-rezume-select1" someProp="cool1">
+
+                                    <div>
+                                        <p className="name-family">{user.firstName + " "+ user.lastName}</p>
+                                        <p className="level-degree">{user.dagreeLavel}</p>
+                                            <div className="d-flex">
+                                                <div className="image-user">
+                                                    <img className="img-fluid" src={user.image} alt=""/>
+                                                </div>
+                                                <p className="personal-info">Personal info</p>
+                                            </div>
+                                        <div className="line-tag"></div>
+                                        <div>
+                                            <p className="text-phone">Phone</p>
+                                            <p className="phone-number">{user.numbers}</p>
+                                        </div>
+                                        <div>
+                                            <p className="text-phone1">E-mail</p>
+                                            <p className="phone-number">{user.email}</p>
+                                        </div>
+                                    </div>
+
+                        </div>
+                        <div className="image-carousel-rezume-select" someProp="cool1"><img className="img-fluid" src="image/image 9.png" alt=""/></div>
+                        <div className="image-carousel-rezume-select" someProp="cool2"><img className="img-fluid" src="image/image 10.png" alt=""/></div>
+                        <div className="image-carousel-rezume-select" someProp="cool3"><img className="img-fluid" src="image/image 11.png" alt=""/></div>
+                        <div className="image-carousel-rezume-select" someProp="cool4"><img className="img-fluid" src="image/image 12.png" alt=""/></div>
+                        <div className="image-carousel-rezume-select" someProp="cool5"><img className="img-fluid" src="image/image 13.png" alt=""/></div>
+                        <div className="image-carousel-rezume-select" someProp="cool6"><img className="img-fluid" src="image/image 14.png" alt=""/></div>
+                    </Carousel>
+                   <div>
+                       {/*<div className="slider-child">*/}
+                       {/*    <div className="card mt-0 card-resume">*/}
+                       {/*<img src="./images/sixth-resume.png" alt="sixth-resume"/>*/}
+                       {/*<FirstTemplateResume/>*/}
+                       {/*<div className="shadow-box">*/}
+                       {/*    <Button onClick={() => {*/}
+                       {/*        dispatch(setResumeNumber("sixth"));*/}
+                       {/*        dispatch(showTemplates());*/}
+                       {/*        dispatch(signedWizardNextSteps())*/}
+                       {/*    }}>Select Template</Button>*/}
+                       {/*</div>*/}
+                       {/*</div>*/}
+                       {/*</div>*/}
+                   </div>
+
                     <div className="all-btn-d-flex">
                         <button className="btn btn-next-to-bac" onClick={progresseighthback}>Back</button>
                         <button className="btn btn-next-to" >Next</button>

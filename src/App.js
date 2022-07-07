@@ -48,7 +48,7 @@ const App = props => {
 
     return (
         <div className="app-wrapper">
-            <NavbarBox/>
+            {/*<NavbarBox/>*/}
             <Routes>
                 <Route path={RoutesPath.home} element={<Home addedTopMargin={addedTopMargin}/>}/>
                 <Route path={RoutesPath.login} element={<Login/>}/>

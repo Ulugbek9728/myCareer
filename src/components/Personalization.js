@@ -47,105 +47,76 @@ const Personalization = props => {
                 ? "personalization-wrapper template-show"
                 : "personalization-wrapper template-hide"}
             >
-                <div className="title-box">
-                    <p className="left-title">Select resume theme</p>
-
-                    <div className="right-select-theme">
-                        {props.resumeColorBox.map((item, index) => {
-                                return <div onClick={() => {
-                                    dispatch(setResumeColor(item.colorName))
-                                }} className={props.resumeColor === item.colorName ? "square-select-theme2" : "square-select-theme"}>
-                                    <div className="circle-color" style={{background: item.colorName}}/>
-                                </div>
-                            })
-                        }
-                    </div>
-                </div>
 
                 <div className="slider-box">
                     <Slider {...settings}>
                         <div className="slider-child">
                             <div className="card mt-0 card-resume">
+                                {/*<img src="./images/sixth-resume.png" alt="sixth-resume"/>*/}
+                                <SixthTemplateResume/>
+                                {/*<div className="shadow-box">*/}
+                                {/*    <Button onClick={() => {*/}
+                                {/*        dispatch(setResumeNumber("sixth"));*/}
+                                {/*        dispatch(showTemplates());*/}
+                                {/*        dispatch(signedWizardNextSteps())*/}
+                                {/*    }}>Select Template</Button>*/}
+                                {/*</div>*/}
+                            </div>
+                        </div>
+                        <div className="slider-child">
+                            <div className="card mt-0 card-resume">
                                 {/*<img src="./images/first-resume.png" alt="third-resume"/>*/}
                                 <FirstTemplateResume/>
-                                <div className="shadow-box">
-                                    <Button onClick={() => {
-                                        dispatch(setResumeNumber("first"));
-                                        dispatch(showTemplates());
-                                        dispatch(signedWizardNextSteps())
-                                    }}>Select Template</Button>
-                                </div>
+                                {/*<div className="shadow-box">*/}
+                                {/*    <Button onClick={() => {*/}
+                                {/*        dispatch(setResumeNumber("first"));*/}
+                                {/*        dispatch(showTemplates());*/}
+                                {/*        dispatch(signedWizardNextSteps())*/}
+                                {/*    }}>Select Template</Button>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                         <div className="slider-child">
                             <div className="card mt-0 card-resume">
                                 {/*<img src="./images/second-resume.png" alt="third-resume"/>*/}
                                 <SecondTemplateResume/>
-                                <div className="shadow-box">
-                                    <Button onClick={() => {
-                                        dispatch(setResumeNumber("second"));
-                                        dispatch(showTemplates());
-                                        dispatch(signedWizardNextSteps())
-                                    }}>Select Template</Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slider-child">
-                            <div className="card ">
-                                {/*<img src="./images/third-resume.png" alt="third-resume"/>*/}
-                                <ThirdTemplateResume/>
-                                <div className="shadow-box">
-                                    <Button onClick={() => {
-                                        dispatch(setResumeNumber("third"));
-                                        dispatch(showTemplates());
-                                        dispatch(signedWizardNextSteps())
-                                    }}>Select Template</Button>
-                                </div>
+                                {/*<div className="shadow-box">*/}
+                                {/*    <Button onClick={() => {*/}
+                                {/*        dispatch(setResumeNumber("second"));*/}
+                                {/*        dispatch(showTemplates());*/}
+                                {/*        dispatch(signedWizardNextSteps())*/}
+                                {/*    }}>Select Template</Button>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                         <div className="slider-child">
                             <div className="card mt-0 card-resume">
                                 {/*<img src="./images/fourth-resume.png" alt="resume-girl"/>*/}
                                 <FourthTemplateResume/>
-                                <div className="shadow-box">
-                                    <Button onClick={() => {
-                                        dispatch(setResumeNumber("fourth"));
-                                        dispatch(showTemplates());
-                                        dispatch(signedWizardNextSteps())
-                                    }}>Select Template</Button>
-                                </div>
+                                {/*<div className="shadow-box">*/}
+                                {/*    <Button onClick={() => {*/}
+                                {/*        dispatch(setResumeNumber("fourth"));*/}
+                                {/*        dispatch(showTemplates());*/}
+                                {/*        dispatch(signedWizardNextSteps())*/}
+                                {/*    }}>Select Template</Button>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                         <div className="slider-child">
                             <div className="card mt-0 card-resume">
                                 {/*<img src="./images/fifth-resume.png" alt="fifth-resume"/>*/}
                                 <FifthTemplateResume/>
-                                <div className="shadow-box">
-                                    <Button onClick={() => {
-                                        dispatch(setResumeNumber("fifth"));
-                                        dispatch(showTemplates());
-                                        dispatch(signedWizardNextSteps())
-                                    }}>Select Template</Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slider-child">
-                            <div className="card mt-0 card-resume">
-                                {/*<img src="./images/sixth-resume.png" alt="sixth-resume"/>*/}
-                                <SixthTemplateResume/>
-                                <div className="shadow-box">
-                                    <Button onClick={() => {
-                                        dispatch(setResumeNumber("sixth"));
-                                        dispatch(showTemplates());
-                                        dispatch(signedWizardNextSteps())
-                                    }}>Select Template</Button>
-                                </div>
+                                {/*<div className="shadow-box">*/}
+                                {/*    <Button onClick={() => {*/}
+                                {/*        dispatch(setResumeNumber("fifth"));*/}
+                                {/*        dispatch(showTemplates());*/}
+                                {/*        dispatch(signedWizardNextSteps())*/}
+                                {/*    }}>Select Template</Button>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     </Slider>
-                    <div className="range-box">
-                        <ProgressBar now={slideIndex < 1 ? 1 : slideIndex + 1} min={0} max={4}/>
-                    </div>
+
                 </div>
             </div>
             <PersonalInformation/>

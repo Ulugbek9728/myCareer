@@ -147,7 +147,7 @@ const reducers = {
         }
 
         const _newArray = [...wizardSteps]
-        _newArray[wizardCurrentIdx].active = true
+        _newArray[wizardCurrentIdx].active = true;
 
         return {
             ...state,

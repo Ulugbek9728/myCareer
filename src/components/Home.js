@@ -79,7 +79,6 @@ const Home = (props) => {
   return (
       <>
         <div className="home-wrapper" id="overflow-y-scroll" onWheel={onScroll}>
-
           <div
               className={margin === 0 ? "pattern" : margin === -100
                   ? "pattern search-talent-pattern" : margin === -200

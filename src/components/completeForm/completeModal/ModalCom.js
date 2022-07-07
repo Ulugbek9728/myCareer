@@ -31,7 +31,7 @@ const [dataList, setDataList] = useState([]);
                 const newTask = dataList;
                 let id = Date.now();
                 newTask.push({id:id, company,job,isComplete,start,end,tagName});
-                setDataList(newTask)
+                setDataList(newTask);
                 setCompany(""); setTagName(""); setEnd(""); setStart(""); setJob("")
             }
             else {
@@ -50,16 +50,16 @@ const [dataList, setDataList] = useState([]);
     return (
         <>
             <div>
+
                 <p className="write-about">Work Experience</p>
                 <p className="complete-your">
                     Freelancers who add their experience are twice as likely to win work.
                     But if you’re just starting out, you can still create a great profile.
                     Just head on to the next page.
                 </p>
-
                     {
                          dataList.map((item, index)=>(
-                           <div className="map-modal mt-2">
+                           <div key={index} className="map-modal mt-2">
                            <div className="w-75">
                                <p className="comName">{item.company}</p>
                                <p className="tagName">{item.job}</p>
