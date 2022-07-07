@@ -7,7 +7,6 @@ const RoutesPath = {
   postJop1: "/find-freelancer",
   postJop2: "/work",
   postJop3: "/skills",
-  myResume: "/myResume",
   jop: "/jobs",
   newJops: "/new-jops",
   savedJops: "/saved-jops",
@@ -22,6 +21,7 @@ const RoutesPath = {
   NewTalants:"/NewTalants",
   Saved:"/Saved",
   signUpPage:"/signUpPage",
+  signUp:"/SignUp",
 
 };
 

@@ -1,6 +1,5 @@
 import createReducer from "../helpers/createReducer";
 import {v4 as uuidv4} from "uuid";
-import moment from "moment";
 import {
   SET_AUTH_EMAIL,
   SET_AUTH_PASSWORD,

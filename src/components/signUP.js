@@ -1,25 +1,25 @@
 import React from 'react';
-import LoginCard from "./loginCard";
+import SignUpCard from "./signUpCard";
 import RoutesPath from "../routes/routes";
 import {useNavigate} from "react-router";
 import AnimeCarusel from "./animeCarusel";
 
-const Login = props => {
+function SignUp(props) {
 
     const navigate = useNavigate();
 
     return (
         <div className="login">
             <div className="logoBg">
-                <img src="./images/Napa_logo_white.svg" alt=""
-                     onClick={() =>{navigate(RoutesPath.home)}}/>
+                <img src="./images/Napa_logo_white.svg" alt="" onClick={() =>{navigate(RoutesPath.home)}}/>
             </div>
             <div className={"sign-in"}>
-                <LoginCard/>
+                <SignUpCard/>
             </div>
-            <AnimeCarusel/>
+
+           <AnimeCarusel/>
         </div>
     );
-};
+}
 
-export default Login;
+export default SignUp;

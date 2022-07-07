@@ -1,7 +1,26 @@
+
+$mainColor: #1D71B8;
+
+
+
 .main_jop, .find-freelans{
   overflow: hidden;
   position: relative;
   z-index: 100111!important;
+  .logoBg {
+    border-radius: 50%;
+    background-color: $mainColor;
+    width: 1208px;
+    height: 1208px;
+    margin: -29% 0 0 -14%;
+    position: absolute;
+    img{
+      width: 30%;
+      margin: 55% 0 0 43%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
 }
 
 .freelans{
@@ -76,7 +95,12 @@
   top: 12%;
   right: 10%;
   z-index: 100;
+  transition: 0.4s linear;
 
+  &:hover .arrow {
+    transition: 0.4s linear;
+    margin-right: 5px;
+  }
   .back{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -94,15 +118,13 @@
     border-radius: 8px;
     background-color: #FFFFFF;
     padding: 13px 23px;
-    margin-top: 60px;
-    margin-left: 10px;
+    margin-left: 12%;
     position: absolute;
-    width: 500px;
+    width: 690px;
     z-index: 100;
     box-shadow: 0px 5px 15px 3px rgb(0 0 0 / 15%);
     cursor: pointer;
     transition: all 0.5s ease;
-
     &:hover{
       transform: scale(1.02);
     }
@@ -131,10 +153,10 @@
     border-radius: 8px;
     background-color: #FFFFFF;
     padding: 13px 23px;
-    margin-top: 260px;
-    margin-left: 10px;
+    margin-top: 200px;
+    margin-left: 12%;
     position: absolute;
-    width: 500px;
+    width: 690px;
     z-index: 100;
     box-shadow: 0px 5px 15px 3px rgb(0 0 0 / 15%);
     cursor: pointer;
@@ -164,6 +186,38 @@
       margin-top: 14px;
     }
   }
+  .linkBox{
+    position: relative;
+    width: 20%;
+    top: 85%;
+    left: 23%;
+    display:flex;
+    justify-content: space-between;
+
+    img{
+      width: auto;
+      height: 50px;
+      position: absolute;
+
+      &:hover {
+        transition: 0.4s linear;
+        height: 55px;
+      }
+    }
+  }
+
+  .komputerImg{
+    margin-top: -80px;
+    margin-left: 40px;
+    width: 40%;
+    z-index: 11;
+    box-sizing: border-box;
+
+    img{
+      width: 100%;
+    }
+
+  }
 }
 
 .freelans{
@@ -172,17 +226,6 @@
   padding: 40px 40px 20px 40px;
 }
 
-.napa_logo{
-  margin-top: 100px;
-  margin-bottom: 80px;
-  position: relative;
-  .napa{
-    position: absolute;
-    top: -65px;
-    left: -65px;
-    //z-index: 0;
-  }
-}
 .profile_jop{
   padding: 22px 16px;
   background-color: #FFFFFF;

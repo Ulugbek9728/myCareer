@@ -4,6 +4,7 @@ import {
   SHOW_COVER_LETTERS,
   SHOW_DOCUMENTS,
   SHOW_DONE_RESUMES,
+  SHOW_LOGIN,
 } from "../actionTypes/resumesActionTypes"
 
 const defaultState = {
@@ -11,7 +12,7 @@ const defaultState = {
   coverLetters: false,
   documents: false,
   doneResumes: false,
-}
+};
 
 const reducers = {
 
@@ -45,7 +46,7 @@ const reducers = {
       doneResumes: !state.doneResumes,
     }
   },
-}
+};
 
 export default createReducer(defaultState, reducers);
 

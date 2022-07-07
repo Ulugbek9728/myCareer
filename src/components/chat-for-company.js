@@ -119,7 +119,6 @@ const ChatForFreelancer = (props) => {
                         </div>
                     </div>
                     <div className="box-bottom">
-
                         <div className="phone-company">
                             <div className="member-since">
                                 <div className="title-since">
@@ -132,11 +131,7 @@ const ChatForFreelancer = (props) => {
                                 <img src="./images/icon-phone.png" alt=""/>
                             </div>
                         </div>
-
                     </div>
-
-
-
                 </div>
 
             </div>

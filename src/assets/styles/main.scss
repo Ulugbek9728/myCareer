@@ -960,6 +960,7 @@ input {
       width: 51%;
       margin: 90px 0 0 256px;
       height: auto;
+
     }
   }
   .homeNavbar{
@@ -1178,6 +1179,7 @@ input {
       width: 30%;
       margin: 55% 0 0 43%;
       height: auto;
+      cursor: pointer;
     }
   }
   .sign-in {
@@ -1214,9 +1216,19 @@ input {
           line-height: 20px;
           color: #949494;
 
-          a {
+          span {
+            cursor: pointer;
+            color: $mainColor;
             margin-left: 5px;
           }
+        }
+
+        .emailSvg{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60%;
+          margin: 0 auto !important;
         }
 
         form {
@@ -1270,6 +1282,16 @@ input {
           justify-content: space-evenly;
 
           .icon {
+            cursor: pointer;
+          }
+          span{
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: $mainColor;
             cursor: pointer;
           }
         }

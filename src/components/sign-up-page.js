@@ -1,22 +1,28 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import RoutesPath from "../routes/routes";
 
 const SignUpPage = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     return (
         <div className="main_jop h-100">
-            <div className="container">
+            <div className="logoBg">
+                <img src="./images/Napa_logo_white.svg" alt=""
+                     onClick={() => {
+                         navigate(RoutesPath.home)
+                     }}/>
+            </div>
+            <div className="container-fluid">
                 <Link to={RoutesPath.home} className="w-100 d-flex justify-content-end post_back">
-                    <div><img src="/images/back.png" className="me-2 mt-2" alt=""/></div>
+                    <div className={"arrow"}><img src="/images/back.png" className="me-2 mt-2" alt=""/></div>
                     <p className="back text-black">back</p>
                 </Link>
                 <div className="row komputer">
                     <div className="col-6">
-                        <Link onClick={() => {
-                        }} to={RoutesPath.login} className="text-black card_jop">
+                        <Link to={RoutesPath.login} className="text-black card_jop">
                             <div className="d-flex align-items-center">
                                 <div className="me-3"><img className="w-100" src="/images/clock.png" alt=""/></div>
                                 <h6 className="mt-1">Freelancer</h6>
@@ -32,9 +38,15 @@ const SignUpPage = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et ex iusto magni numquam
                                 quaerat.</p>
                         </Link>
+
+                        <div className="linkBox">
+                            <a href="#"><img src="./images/iconTelegram.svg" alt=""/></a>
+                            <a href="#"><img src="./images/iconFacebook.svg" alt=""/></a>
+                            <a href="#"><img src="./images/iconInstogram.svg" alt=""/></a>
+                        </div>
                     </div>
-                    <div className="col-6 d-flex justify-content-end">
-                        <img className="" style={{zIndex: "10", marginBottom: "20%"}} width="80%" src="/images/komputer.svg" alt="Error"/>
+                    <div className="col-6 d-flex justify-content-end komputerImg">
+                        <img src="/images/komputer.svg" alt="Error"/>
                     </div>
                 </div>
                 <div className="pattern1">

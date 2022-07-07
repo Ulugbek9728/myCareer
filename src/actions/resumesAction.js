@@ -3,6 +3,7 @@ import {
   SHOW_COVER_LETTERS,
   SHOW_DOCUMENTS,
   SHOW_DONE_RESUMES,
+  SHOW_LOGIN,
 } from "../actionTypes/resumesActionTypes";
 
 export function showAllResumes() {
