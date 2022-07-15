@@ -3,6 +3,7 @@ const RoutesPath = {
   login: "/login",
   templates: "/info",
   aboutUs: "/aboutUs",
+  contactUspage: "/contactUspage",
   postJop: "/postJop",
   postJop1: "/find-freelancer",
   postJop2: "/work",

@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react';
-import {useNavigate} from "react-router-dom";
-import RoutesPath from "../routes/routes";
-import {Button, Dropdown, Nav, Navbar} from "react-bootstrap";
+import React, {useEffect} from 'react';
 import {connect, useDispatch} from "react-redux";
-import {addSize, displayCircle, homeCircleVisible} from "../actions/careerAction";
-import NavbarBrand from "react-bootstrap/esm/NavbarBrand";
+import {displayCircle} from "../actions/careerAction";
+import RoutesPath from "../routes/routes";
+import {Button} from "react-bootstrap";
+import {useNavigate} from "react-router";
+
 
 const enhancer = connect((
     {
@@ -18,151 +18,113 @@ const enhancer = connect((
     }));
 
 const AboutUs = (props) => {
-    const navigate = useNavigate();
     const dispatch = useDispatch();
-    const {initialValue} = props;
+    const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(displayCircle());
-        dispatch(homeCircleVisible());
     }, []);
 
-    const [toggleMenu,setToggleMenu]=useState(false);
 
-    const toggleNav =()=>{
-        setToggleMenu(!toggleMenu)
-    };
-    const [screenWith, setScreenWith]=useState(window.innerWidth);
-    useEffect(()=>{
-        const changeWith=()=>{
-            setScreenWith(window.innerWidth)
-        };
-
-        window.addEventListener('resize', changeWith)
-
-    },[]);
 
     return (
         <div className="about-page" id="">
-            <div className="about-page-box">
-                <Navbar expand="lg">
-                    <NavbarBrand>
-                        <div className="logo">
-                            <img src="./images/Logo-Blue-2.png" alt="logo"/>
-                        </div>
-                        <div className="logo-title">
-                            {/*<img src="./images/by Napa.png" alt=""/>*/}
-                        </div>
-                    </NavbarBrand>
+            <div>
+                <div className="navbarHom">
+                    <div className="logoBg"><img src="./images/Napa_logo_white.svg" alt=""/></div>
+                    <div className="homeNavbar">
+                        <div className=" navbar navbar-expand-md">
+                            <button type="button" className="navbar-toggler knopka" data-bs-toggle="collapse"
+                                    data-bs-target="#myCollapse">
+                                <label htmlFor="check">
+                                    <input type="checkbox" id="check"/>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                            </button>
 
-                    <div onClick={toggleNav} className=" btn hamburger-menu">
-                        <img className='burgermenu' src="./images/burgerMenu.png" alt=""/>
-                    </div>
-                    <div className="navbar-Desktop" id="navbarScroll">
-                        <div
-                            className="ms-auto my-2 my-lg-0 navbar-nav"
-                            style={{maxHeight: '100px'}}
+                            <div className="collapse navbar-collapse" id="myCollapse">
 
-                        >
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/">Talants</Nav.Link>
-                            <Nav.Link onClick={() => {
-                                navigate(RoutesPath.postJop)
-                            }
-                            }>Jobs</Nav.Link>
-                            <Nav.Link onClick={() => {
-                                dispatch(displayCircle());
-                                navigate(RoutesPath.aboutUs)
-                            }
-                            }>About us</Nav.Link>
-                            <Nav.Link href="#action2">Contact us</Nav.Link>
-                        </div>
-
-                    </div>
-                </Navbar>
-                {(toggleMenu || screenWith >768) &&(
-                    <div className="sloy-manu">
-                        <div className="navbar-planshet"  id="navbarScroll">
-                            <div
-                                className="ms-auto my-2 my-lg-0 navbar-nav"
-                            >
-                                <Nav.Link >
-                                    <img onClick={toggleNav} src="./images/planshet-prev.png" alt=""/>
-                                </Nav.Link>
-                                <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/">Talants</Nav.Link>
-                                <Nav.Link onClick={() => {
-                                    navigate(RoutesPath.postJop)
-                                }
-                                }>Jobs</Nav.Link>
-                                <Nav.Link onClick={() => {
-                                    dispatch(displayCircle());
-                                    navigate(RoutesPath.aboutUs)
-                                }
-                                }>About us</Nav.Link>
-                                <Nav.Link href="#action2">Contact us</Nav.Link>
-                                <Nav.Link href="#action2">
-                                    <img src="./images/photo-comp.png" alt=""/>
-                                </Nav.Link>
+                                <ul className="nav">
+                                    <li className="nav-item">
+                                        <div className='nav-link ' data-bs-toggle="tab" onClick={() => {
+                                            navigate(RoutesPath.home)
+                                        }}>Home
+                                        </div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link " data-bs-toggle="tab"
+                                             onClick={() => {
+                                                 navigate(RoutesPath.talants)
+                                             }}>Talants
+                                        </div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link" data-bs-toggle="tab"
+                                             onClick={() => {
+                                                 navigate(RoutesPath.postJop)
+                                             }}>Jobs
+                                        </div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link active" data-bs-toggle="tab"
+                                             onClick={() => {
+                                                 navigate(RoutesPath.aboutUs)
+                                             }}>About us
+                                        </div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link" data-bs-toggle="tab"
+                                             onClick={() => {
+                                                 navigate(RoutesPath.contactUspage)
+                                             }}>Contact us</div>
+                                    </li>
+                                </ul>
+                                <div className='boxBtn'>
+                                    <Button className="custom-outline-btn" onClick={() => {
+                                        navigate(RoutesPath.login)
+                                    }}>Log in</Button>
+                                    <Button className="custom-outline-btn sign-btn" onClick={() => {
+                                        navigate(RoutesPath.signUp)
+                                    }}>Sign up</Button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                )}
-                <div className="about-page-main-box">
-                    <div className="about-box-left">
-                        <div className="textAboutUs-mobile">
-                            About us
-                        </div>
-                        <div className="about-video">
-                            <video src="./images/videoForWork.mp4" controls width="500"></video>
-                        </div>
-                        <div className="about-box-right-planshet">
-
-                            <div className="aboutUsText">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                richardson ad squid.
-
-                                Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate
-                                deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex
-                                asperiores quisquam optio nostrum sit!
-                                The company offers services to improve the efficiency of other companies. With the
-                                help of our
-                            </div>
-                            <div className="iconForAbout">
-                                <img src="./images/iconTelegram.png" alt="pattern"/>
-                                <img src="./images/iconFacebook.png" alt="pattern"/>
-                                <img src="./images/iconInstagram.png" alt="pattern"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="about-box-right">
-                        <div className="textAboutUs">
-                            About us
-                        </div>
-                        <div className="aboutUsText">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                            richardson ad squid.
-
-                            Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate
-                            deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex
-                            asperiores quisquam optio nostrum sit!
-                            The company offers services to improve the efficiency of other companies. With the
-                            help of our
-                        </div>
-                        <div className="iconForAbout">
-                            <img src="./images/iconTelegram.png" alt="pattern"/>
-                            <img src="./images/iconFacebook.png" alt="pattern"/>
-                            <img src="./images/iconInstagram.png" alt="pattern"/>
-                        </div>
-                    </div>
-                    <div className="pattern2">
-                        <img src="./images/white-ell1.svg" alt="pattern"/>
-                        <img src="./images/white-ell2.svg" alt="pattern"/>
-                        <img src="./images/white-ell3.svg" alt="pattern"/>
-                        <img src="./images/white-ell4.svg" alt="pattern"/>
-                        <img src="./images/white-ell5.svg" alt="pattern"/>
                     </div>
                 </div>
+            </div>
+
+            <div className="about-page-box">
+                <div className="left">
+                    <video id="video1" src="./images/videoForWork.mp4" controls />
+                </div>
+                <div className="right">
+                    <div className="box ">
+                        <h3>About us</h3>
+                        <div className="linkBox">
+                            <a href="#"><img src="./images/iconTelegram.svg" alt=""/></a>
+                            <a href="#"><img src="./images/iconFacebook.svg" alt=""/></a>
+                            <a href="#"><img src="./images/iconInstogram.svg" alt=""/></a>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloribus
+                        dolorum fugiat, iste iure iusto nihil non possimus rem saepe soluta vel voluptates.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloribus dolorum
+                        fugiat, iste iure iusto nihil non possimus rem saepe soluta vel voluptates.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloribus dolorum
+                        fugiat, iste iure iusto nihil non possimus rem saepe soluta vel voluptates.
+                    </p>
+
+                </div>
+            </div>
+            <div className="patternn2">
+                <img src="./images/white-ell1.svg" alt="pattern"/>
+                <img src="./images/white-ell2.svg" alt="pattern"/>
+                <img src="./images/white-ell3.svg" alt="pattern"/>
+                <img src="./images/white-ell4.svg" alt="pattern"/>
+                <img src="./images/white-ell5.svg" alt="pattern"/>
             </div>
         </div>
     );

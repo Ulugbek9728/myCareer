@@ -8,8 +8,8 @@ import {connect, useDispatch} from "react-redux";
 import {displayCircle, homeCircleVisible} from "../actions/careerAction";
 import 'bootstrap/dist/js/bootstrap.bundle'
 import "aos/dist/aos.css";
-import NavbarBox from "./NavbarBox";
-
+import RoutesPath from "../routes/routes";
+import {useNavigate} from "react-router";
 
 const enhancer = connect((
     {
@@ -28,7 +28,7 @@ const Home = () => {
     useEffect(() => {
         AOS.init()
     });
-
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [margin, setMargin] = useState(0);
     const [screenWith, setScreenWith] = useState(window.innerWidth);
@@ -75,7 +75,6 @@ const Home = () => {
 
   return (
         <div className="home-wrapper" id="overflow-y-scroll" onWheel={onScroll}>
-            <NavbarBox/>
           <div
               className={margin === 0 ? "pattern" : margin === -100
                   ? "pattern search-talent-pattern" : margin === -200
@@ -87,6 +86,55 @@ const Home = () => {
             <img src="./images/white-ell4.svg" alt="pattern"/>
             <img src="./images/white-ell5.svg" alt="pattern"/>
           </div>
+            <div>
+                <div className="navbarHom">
+                    <div className="logoBg"><img src="./images/Napa_logo_white.svg" alt=""/></div>
+                    <div className="homeNavbar">
+                        <div className=" navbar navbar-expand-md">
+                            <button type="button" className="navbar-toggler knopka" data-bs-toggle="collapse"
+                                    data-bs-target="#myCollapse">
+                                <label htmlFor="check">
+                                    <input type="checkbox" id="check"/>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                            </button>
+
+                            <div className="collapse navbar-collapse" id="myCollapse">
+
+                                <ul className="nav">
+                                    <li className="nav-item">
+                                        <div className='nav-link active' data-bs-toggle="tab" onClick={() =>{
+                                            navigate(RoutesPath.home)}} >Home</div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link " data-bs-toggle="tab"
+                                             onClick={() =>{navigate(RoutesPath.talants)}}>Talants</div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link" data-bs-toggle="tab"
+                                             onClick={() =>{navigate(RoutesPath.postJop)}}>Jobs</div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link" data-bs-toggle="tab"
+                                             onClick={() =>{navigate(RoutesPath.aboutUs)}}>About us</div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <div className="nav-link" data-bs-toggle="tab"
+                                        onClick={()=>{navigate(RoutesPath.contactUspage)}}>Contact us</div>
+                                    </li>
+                                </ul>
+                                <div className='boxBtn'>
+                                    <Button className="custom-outline-btn" onClick={() =>{
+                                        navigate(RoutesPath.login)}}>Log in</Button>
+                                    <Button className="custom-outline-btn sign-btn" onClick={() =>{
+                                        navigate(RoutesPath.signUp)}}>Sign up</Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {margin === 0 ? <div className="main-home-page-box">
                 <div className="company-name-title"
                      data-aos="fade-right"

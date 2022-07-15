@@ -232,28 +232,9 @@ $mainColor: #1D71B8;
   border-radius: 12px;
 }
 
-.menu{
-  .nav{
-    .nav-item{
-      .nav-link{
-        color: rgba(53, 126, 206, 0.65);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        line-height: 16px;
-        font-weight: 500;
-        border-bottom: 3px solid transparent;
-
-        &:hover, &.active{
-          color: #357ECE;
-          border-bottom: 3px solid #357ECE;
-          background-color: transparent!important;
-        }
-        //.active{
-        //  border-bottom: 3px solid #357ECE;
-        //}
-      }
-    }
-  }
+.talantBox{
+  margin-top: 10%;
+  z-index: 15000;
 }
 
 .bestMatches{

@@ -29,6 +29,8 @@ import SignUpPage from "./components/sign-up-page";
 import SignUp from "./components/signUP";
 import CompleteForm from "./components/completeForm/CompleteForm";
 import CompleteCompany from "./components/completeCampany/CompleteCompany";
+import ContactUs from "./components/ContactUs";
+import ContactUsPage from "./components/ContactUsPage";
 
 const enhancer = connect(
     ({resumes: {doneResumes}}) =>
@@ -38,16 +40,11 @@ const App = props => {
     const dispatch = useDispatch();
     const [topSpace, setTopSpace] = useState(0);
 
-  const addedTopMargin = (num) => {
-    setTopSpace(num)
-    // if (num === 0) setTopSpace(true)
-    // if (num < 0) setTopSpace(false)
-  };
 
     return (
         <div className="app-wrapper">
             <Routes>
-                <Route path={RoutesPath.home} element={<Home addedTopMargin={addedTopMargin}/>}/>
+                <Route path={RoutesPath.home} element={<Home/>}/>
                 <Route path={RoutesPath.login} element={<Login/>}/>
                 <Route path={RoutesPath.signUp} element={<SignUp/>}/>
                 <Route path={RoutesPath.templates} element={<Personalization/>}/>
@@ -60,8 +57,8 @@ const App = props => {
                 <Route path={RoutesPath.newJops} element={<NewJops/>}/>
                 <Route path={RoutesPath.savedJops} element={<SavedJops/>}/>
                 <Route onClick={()=>{ dispatch(displayCircle()) }} path={RoutesPath.postJop1} element={<PostJop1/>}/>
-                <Route onClick={()=>{ dispatch(displayCircle()) }} path={RoutesPath.aboutUs} element={<AboutUs/>}/>
                 <Route path={RoutesPath.aboutUs} element={<AboutUs/>}/>
+                <Route path={RoutesPath.contactUspage} element={<ContactUsPage/>}/>
                 <Route path={RoutesPath.profileCompany} element={<ProfileCompany/>}/>
                 <Route element={<NotFound/>}/>
                 <Route path={RoutesPath.myCv} element={<MyCv/>}/>
