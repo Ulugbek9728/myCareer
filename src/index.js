@@ -29,7 +29,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <NewTalants/>
+        <App/>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
