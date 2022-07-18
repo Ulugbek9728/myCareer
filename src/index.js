@@ -20,6 +20,8 @@ import store from './store/store';
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-toastify/dist/ReactToastify.css';
+import NewTalants from './components/talants/NewTalants';
+import NewJobs from './components/postJop/NewJobs';
 
 
 
@@ -27,7 +29,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <App/>
+        <NewTalants/>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
