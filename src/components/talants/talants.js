@@ -1,18 +1,29 @@
 import React from 'react';
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import RoutesPath from "../../routes/routes";
 import {connect} from "react-redux";
-import {Button} from "react-bootstrap";
 
 function Talants(props) {
-    const navigate = useNavigate();
-
     return (
         <div>
             <div className="post-jop-wrapper" id="overflow-y-scroll">
-
-
                 <div className="container">
+                    <div className="d-flex napa_logo justify-content-between align-items-center">
+                        <Link to="/">
+                            <img className="napa" src="/images/logo_napa.svg" alt="Error"/>
+                        </Link>
+                        <div className="menu">
+                            <ul className="nav h-100">
+                                <li className="nav-item"><Link className="nav-link" to={RoutesPath.home}>Home</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Talants</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={RoutesPath.postJop}>Post job</Link>
+                                </li>
+                                <li className="nav-item"><Link className="nav-link" to={RoutesPath.aboutUs}>About us</Link>
+                                </li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Contact us</Link></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-9">
                             <div className="input-group bg-white py-3 px-3 mb-3 w-100" style={{borderRadius: "6px"}}>
