@@ -2,6 +2,7 @@ import React from 'react';
 import RoutesPath from "../../routes/routes";
 import {Link, useNavigate} from "react-router-dom";
 import {Button} from "react-bootstrap";
+import LoginCard from "../loginCard";
 
 function PostJop(props) {
     const navigate = useNavigate();
@@ -155,28 +156,7 @@ function PostJop(props) {
    </div>
 </div>
 </div>
-<div className='cardLogin'>
-    <div className='cardLoginText'>Log in</div>
-    <div className='cardLoginText1'>Still don’t have an account?</div>
-    <div className='cardLoginText2'>Sign up now!</div>
-    <div className="d-flex flex-column align-items-center">
-               <div className="col-11 inputSizing77">
-                 <input type="text" className="form-control" placeholder="Email" aria-label="Email"/>
-               </div>
-               <div className="col-11  inputSizing77">
-                  <input type="password" className="form-control" placeholder="Password" aria-label="Password"/>
-               </div>
-    </div>
-    <button type="button" className="signUpButtonStyle btn btn-primary">Continue</button>
-    <hr className='ourhr' />
-    <div className='text-center pt-4'>Or continue with</div>
-    <div className="bottom-icons d-flex ps-5 pt-4">
-                        <div className="icon ps-5"><img src="./images/facebook-3 logo.svg" alt=""/></div>
-                        <div className="icon ps-4"><img src="./images/github logo.svg" alt=""/></div>
-                        <div className="icon ps-4"><img src="./images/Google logo.svg" alt=""/></div>
-                        <div className="icon ps-4"><img src="./images/Group 244.svg" alt=""/></div>
-    </div>
-</div>
+    <div className="jobLogin"><LoginCard/></div>
 
 </div>
             </div>

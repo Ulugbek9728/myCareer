@@ -3,6 +3,7 @@ import SignUpCard from "./signUpCard";
 import RoutesPath from "../routes/routes";
 import {useNavigate} from "react-router";
 import AnimeCarusel from "./animeCarusel";
+import {useSelector} from "react-redux";
 
 function SignUp(props) {
 
@@ -15,6 +16,7 @@ function SignUp(props) {
             </div>
             <div className={"sign-in"}>
                 <SignUpCard/>
+
             </div>
            <AnimeCarusel/>
         </div>

@@ -31,6 +31,7 @@ import CompleteForm from "./components/completeForm/CompleteForm";
 import CompleteCompany from "./components/completeCampany/CompleteCompany";
 import ContactUs from "./components/ContactUs";
 import ContactUsPage from "./components/ContactUsPage";
+import NewJobs from "./components/postJop/NewJobs";
 
 const enhancer = connect(
     ({resumes: {doneResumes}}) =>
@@ -43,6 +44,10 @@ const App = props => {
 
     return (
         <div className="app-wrapper">
+            {/*<PostJop1/>*/}
+            {/*<PostJop2/>*/}
+            {/*<PostJop3/>*/}
+            {/*<BestMatches/>*/}
             <Routes>
                 <Route path={RoutesPath.home} element={<Home/>}/>
                 <Route path={RoutesPath.login} element={<Login/>}/>

@@ -85,7 +85,7 @@ function SignUpCard(props) {
                         </Form>
 
                         <div className="bottom-fields">
-                            <Button className="custom-btn" onClick={()=>setEmail(true)}>Continue</Button>
+                            <Button className="custom-btn1" onClick={()=>setEmail(true)}>Continue</Button>
                         </div>
                         <div className="bottom-title">Or continue with</div>
                         <div className="bottom-icons">

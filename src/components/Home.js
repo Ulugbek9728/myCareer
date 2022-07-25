@@ -165,7 +165,8 @@ const Home = () => {
                                 type="text"
                                 placeholder="Job title, keywords..."/>
                         </Form.Group>
-                        <button className='src_btn'><img src="./images/search.svg" alt=""/></button>
+                        <button onClick={() =>{navigate(RoutesPath.postJop)}}
+                            className='src_btn'><img src="./images/search.svg" alt=""/></button>
                     </div>
                 </form>
 
@@ -223,7 +224,8 @@ const Home = () => {
                                         type="text"
                                         placeholder="Job title, keywords..."/>
                                 </Form.Group>
-                                <button className='src_btn'><img src="./images/search.svg" alt=""/></button>
+                                <button onClick={() =>{navigate(RoutesPath.talants)}}
+                                        className='src_btn'><img src="./images/search.svg" alt=""/></button>
                             </div>
                         </div>
                     </Col>
@@ -235,25 +237,25 @@ const Home = () => {
                          data-aos="fade-right"
                          data-aos-duration="800"
                          data-aos-easing="ease-in-sine">
-                        <div className="post-job-info-box">
-                            <h2>Search talants!</h2>
-                            <div className="job-description ">
-                                Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate
-                                deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex
-                                asperiores quisquam optio nostrum sit!
-                            </div>
-                            <div className="post-job">
-                                <Button className="custom-btn">Post job</Button>
-                            </div>
+                        <div className="post-job-img-box">
+                            <img src="./images/post-job.svg" alt="talent"/>
                         </div>
                     </Col>
                     <Col md="6" className="left-column"
                          data-aos="fade-left"
                          data-aos-duration="800"
                          data-aos-easing="ease-in-sine">
-                        <div className="post-job-img-box">
-                            <img src="./images/post-job.png" alt="talent"/>
+                        <div className="post-job-info-box">
+                            <h2>Search talants!</h2>
+                            <div className="job-description ">
+                                Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate
+                                deserunt eligendi officia modi consectetur.
+                            </div>
+                            <div className="post-job">
+                                <Button className="custom-btn">Post job</Button>
+                            </div>
                         </div>
+
                     </Col>
                 </Row>
             </div> : ""}

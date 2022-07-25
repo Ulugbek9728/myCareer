@@ -54,7 +54,7 @@ function LoginCard(props) {
                     </Form>
 
                     <div className="bottom-fields">
-                        <Button className="custom-btn" onClick={() => {
+                        <Button className="custom-btn1" onClick={() => {
                             navigate(RoutesPath.signUpPage)
                         }}>Continue</Button>
                     </div>
