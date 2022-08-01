@@ -3,6 +3,7 @@ import RoutesPath from "../../routes/routes";
 import {Link, useNavigate} from "react-router-dom";
 import {Button} from "react-bootstrap";
 import LoginCard from "../loginCard";
+import TalentCard from '../talent-card/talent-card';
 
 function Talants(props) {
     const navigate = useNavigate();
@@ -74,7 +75,8 @@ function Talants(props) {
                         <button type="button" className="forSearchBtn forSearchBtn99 btn btn-outline-secondary"><div className='searchIcon searchIcon1'></div></button>
                     </div>
                     <div className='allCards1'>
-                        <div className='personalCard personalCard0'>
+                        <TalentCard />
+                        {/* <div className='personalCard personalCard6'>
                             <div className='d-flex'>
                                 <div className='d-flex'>
                                     <div className='cardPic'></div>
@@ -101,64 +103,7 @@ function Talants(props) {
                                 <div className='cardLocation1'></div>
                                 <div className='cardLocation'>Tashkent, Uzbekistan</div>
                             </div>
-                        </div>
-                        <div className='personalCard personalCard1 personalCard5'>
-                            <div className='d-flex'>
-                                <div className='d-flex'>
-                                    <div className='cardPic'></div>
-                                    <div className='cardUserName'>Michel R</div>
-                                    <div className='cardTick'></div>
-                                    <div className='cardSphere'>Web-desing UI/UX</div>
-                                </div>
-                                <div className='d-flex'>
-                                    <div className='cardJobSuccess'><div>80%</div><div className='cardRange'></div><div className='cardJob'>Job Success</div></div>
-                                    <div className='cardHourly'><div>5$</div> <div className='cardHourlyText'>Hourly</div></div>
-                                    <div className='cardHourly cardJobs'><div>324</div> <div className='cardHourlyText'>Completed Jobs</div></div>
-                                </div>
-                                <div className='cardLikeBtn' onClick={handleClass}></div>
-                            </div>
-                            <div className='cardText d-flex'>Experienced designer required to make updates to website graphic assets and email banner. Files will be provided in Adobe illustrator and Photoshop PSD. Tasks as follows: ... <div className='cardPointer'></div></div>
-                            <div className='d-flex'>
-                                <div className='cardFigma text-center pt-2'>Figma</div>
-                                <div className='cardFigma cardText1 text-center pt-2'>html</div>
-                                <div className='cardFigma cardText2 text-center pt-2'>Adobe PhotoShop</div>
-                                <div className='cardLevel'>Level: <span className='cardLevel1'>Middle</span></div>
-                            </div>
-                            <div className='d-flex'>
-                                <div className='cardYears'>3 years <span className='cardYears1'>of experience</span></div>
-                                <div className='cardLocation1'></div>
-                                <div className='cardLocation'>Tashkent, Uzbekistan</div>
-                            </div>
-
-                        </div>
-                        <div className='personalCard personalCard6'>
-                            <div className='d-flex'>
-                                <div className='d-flex'>
-                                    <div className='cardPic'></div>
-                                    <div className='cardUserName'>Michel R</div>
-                                    <div className='cardTick'></div>
-                                    <div className='cardSphere'>Web-desing UI/UX</div>
-                                </div>
-                                <div className='d-flex'>
-                                    <div className='cardJobSuccess'><div>80%</div><div className='cardRange'></div><div className='cardJob'>Job Success</div></div>
-                                    <div className='cardHourly'><div>5$</div> <div className='cardHourlyText'>Hourly</div></div>
-                                    <div className='cardHourly cardJobs'><div>324</div> <div className='cardHourlyText'>Completed Jobs</div></div>
-                                </div>
-                                <div className='cardLikeBtn' onClick={handleClass}></div>
-                            </div>
-                            <div className='cardText d-flex'>Experienced designer required to make updates to website graphic assets and email banner. Files will be provided in Adobe illustrator and Photoshop PSD. Tasks as follows: ... <div className='cardPointer'></div></div>
-                            <div className='d-flex'>
-                                <div className='cardFigma text-center pt-2'>Figma</div>
-                                <div className='cardFigma cardText1 text-center pt-2'>html</div>
-                                <div className='cardFigma cardText2 text-center pt-2'>Adobe PhotoShop</div>
-                                <div className='cardLevel'>Level: <span className='cardLevel1'>Middle</span></div>
-                            </div>
-                            <div className='d-flex'>
-                                <div className='cardYears'>3 years <span className='cardYears1'>of experience</span></div>
-                                <div className='cardLocation1'></div>
-                                <div className='cardLocation'>Tashkent, Uzbekistan</div>
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="jobLogin"><LoginCard/></div>
                 </div>
