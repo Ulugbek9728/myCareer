@@ -5,7 +5,8 @@
 }
 
 $mainColor: #1D71B8;
-%allButton{
+
+%allButton {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -16,7 +17,9 @@ $mainColor: #1D71B8;
   height: 44px;
   border-radius: 8px;
 
-  &:focus, &:hover, &:active {
+  &:focus,
+  &:hover,
+  &:active {
     box-shadow: none !important;
     background: $mainColor;
     color: #FFFFFF;
@@ -67,7 +70,10 @@ $mainColor: #1D71B8;
 }
 
 .form-control {
-  &:hover, &:active, &:focus {
+
+  &:hover,
+  &:active,
+  &:focus {
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
     border: 1px solid #ffffff00 !important;
   }
@@ -137,7 +143,9 @@ a {
 input {
   background: #FFFFFF !important;
 
-  &:focus, &:hover, &:active {
+  &:focus,
+  &:hover,
+  &:active {
     background: #FFFFFF !important;
   }
 }
@@ -263,7 +271,7 @@ input {
   margin-top: -13px;
 }
 
-.pattern99{
+.pattern99 {
   width: 46vw;
   height: 30vw;
   position: fixed;
@@ -311,11 +319,13 @@ input {
       transform: rotate(1turn);
     }
   }
+
   @keyframes pattern4 {
     0% {
       transform: rotate(-1turn);
     }
   }
+
   @keyframes pattern3 {
     0% {
       transform: rotate(1turn);
@@ -323,7 +333,7 @@ input {
   }
 }
 
-.pattern11{
+.pattern11 {
   width: 46vw;
   height: 46vw;
   position: fixed;
@@ -371,11 +381,13 @@ input {
       transform: rotate(1turn);
     }
   }
+
   @keyframes pattern4 {
     0% {
       transform: rotate(-1turn);
     }
   }
+
   @keyframes pattern3 {
     0% {
       transform: rotate(1turn);
@@ -395,9 +407,19 @@ input {
 .app-wrapper {
   width: 100%;
   height: 100vh;
-  background: #F6F8FA;
-  overflow: hidden;
   transition: .4s linear;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #F6F8FA;
+    z-index: -9;
+  }
 }
 
 .home-wrapper {
@@ -406,7 +428,7 @@ input {
   position: relative;
   overflow: hidden;
 
-  .pattern{
+  .pattern {
     width: 46vw;
     height: 46vw;
     position: fixed;
@@ -454,17 +476,20 @@ input {
         transform: rotate(1turn);
       }
     }
+
     @keyframes pattern4 {
       0% {
         transform: rotate(-1turn);
       }
     }
+
     @keyframes pattern3 {
       0% {
         transform: rotate(1turn);
       }
     }
   }
+
   .search-talent-pattern {
     width: 32vw;
     height: 32vw;
@@ -570,6 +595,7 @@ input {
     .sloy-manu {
       display: none;
     }
+
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -630,7 +656,8 @@ input {
       height: 0;
       transition: 0.4s linear;
 
-      .logo, .logo-title {
+      .logo,
+      .logo-title {
         position: absolute;
         top: 0;
       }
@@ -642,6 +669,7 @@ input {
       max-width: 740px;
       top: 285px;
       left: 12.9%;
+
       h2 {
         font-weight: 600;
         font-size: 56px;
@@ -707,6 +735,7 @@ input {
         border-radius: 8px;
         border-color: $mainColor;
       }
+
       .src_btn {
         position: absolute;
         top: 0;
@@ -714,9 +743,10 @@ input {
         width: 90px;
         height: 54px;
         background: $mainColor;
-        border-radius: 8px!important;
+        border-radius: 8px !important;
         border: none;
-        img{
+
+        img {
           width: 30% !important;
           height: auto;
         }
@@ -793,6 +823,7 @@ input {
   .search-talents-box {
     width: 100vw;
     height: 100vh;
+
     .row {
       height: 100%;
 
@@ -803,10 +834,12 @@ input {
         z-index: 11;
         height: 70%;
         margin-top: 10%;
+
         .talent-img-box {
           width: 60%;
 
           margin: 5% 0 0 10%;
+
           img {
             width: 100%;
           }
@@ -819,6 +852,7 @@ input {
         justify-content: flex-start;
         padding-bottom: 17%;
         z-index: 9;
+
         .talent-info-box {
           width: 85%;
 
@@ -871,9 +905,10 @@ input {
               width: 90px;
               height: 54px;
               background: $mainColor;
-              border-radius: 8px!important;
+              border-radius: 8px !important;
               border: none;
-              img{
+
+              img {
                 width: 30%;
                 height: auto;
               }
@@ -895,8 +930,10 @@ input {
       .left-column {
         display: flex;
         align-items: center;
+
         .post-job-info-box {
           width: 70%;
+
           h2 {
             font-style: normal;
             font-weight: bold;
@@ -942,8 +979,10 @@ input {
         padding-left: 7%;
         padding-bottom: 8%;
         z-index: 11;
+
         .post-job-img-box {
           width: 70%;
+
           img {
             width: 100%;
           }
@@ -964,17 +1003,19 @@ input {
         height: 70%;
         margin-top: 10%;
         z-index: 11;
-        h1{
+
+        h1 {
           margin-top: 28%;
-          font-family: 'Montserrat',sans-serif;
+          font-family: 'Montserrat', sans-serif;
           font-style: italic;
           font-weight: 700;
           font-size: 50px;
           line-height: 61px;
           color: #323232;
         }
-        p{
-          font-family: 'Montserrat',sans-serif;
+
+        p {
+          font-family: 'Montserrat', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 35px;
@@ -984,7 +1025,8 @@ input {
           width: 700px;
           margin-top: 20px;
         }
-        button{
+
+        button {
           @extend %allButton;
           background-color: $mainColor;
           color: white;
@@ -992,7 +1034,7 @@ input {
           height: 57px;
           font-size: 30px;
           line-height: 37px;
-          margin: 50px 0 0 30% ;
+          margin: 50px 0 0 30%;
         }
       }
 
@@ -1003,6 +1045,7 @@ input {
         display: flex;
         align-items: center;
         justify-content: center;
+
         .contact-form-box {
           margin-top: 8%;
           width: 50%;
@@ -1011,11 +1054,13 @@ input {
           .contact {
             width: 100%;
           }
-          .linkBox{
+
+          .linkBox {
             width: 50%;
-            display:flex;
+            display: flex;
             justify-content: space-between;
-            img{
+
+            img {
               width: auto;
               height: 50px;
             }
@@ -1025,15 +1070,16 @@ input {
     }
   }
 
-  .dotsBox{
+  .dotsBox {
     position: fixed;
     top: 40%;
     right: 4%;
     z-index: 10000;
 
-    .nav{
+    .nav {
       position: relative;
-      .line{
+
+      .line {
         width: 5px;
         height: 80%;
         background-color: $mainColor;
@@ -1042,17 +1088,19 @@ input {
         left: 45%;
         z-index: 0;
       }
-      .navtest{
+
+      .navtest {
         z-index: 10;
         margin-top: 10px;
         background-color: inherit;
-        width: 50px ;
+        width: 50px;
         height: 50px;
         display: flex;
         padding: 0;
         justify-content: center;
         align-items: center;
-        .dots{
+
+        .dots {
           cursor: pointer;
           width: 30px !important;
           height: 30px;
@@ -1063,8 +1111,9 @@ input {
 
         }
       }
-      .active{
-        .dots{
+
+      .active {
+        .dots {
           transition: 0.4s linear;
           border: 10px solid $mainColor;
           width: 50px !important;
@@ -1077,30 +1126,34 @@ input {
 
 .navbarHom {
   position: fixed;
-  z-index:10;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   width: 100vw;
   height: 300px;
+
   .logoBg {
     width: 37%;
     height: 485px;
     background-image: url("../../img/EllipseNav.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    img{
+
+    img {
       width: 51%;
       margin: 90px 0 0 256px;
       height: auto;
 
     }
   }
-  .homeNavbar{
+
+  .homeNavbar {
     width: 63%;
     position: relative;
     margin-top: 4.2%;
     padding-right: 10%;
-    .nav{
+
+    .nav {
       height: 50px;
       margin-left: 20px;
       position: relative;
@@ -1109,9 +1162,10 @@ input {
       display: flex;
       justify-content: space-between;
       width: 60%;
-      .nav-link{
+
+      .nav-link {
         cursor: pointer;
-        font-family: 'Montserrat',sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 23px;
@@ -1126,11 +1180,13 @@ input {
           border-bottom: 5px solid $mainColor;
         }
       }
-      .active{
+
+      .active {
         border-bottom: 5px solid $mainColor;
       }
     }
-    .boxBtn{
+
+    .boxBtn {
       margin-left: 50px;
     }
   }
@@ -1294,6 +1350,7 @@ input {
     }
   }
 }
+
 .card {
   background: #FFFFFF;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
@@ -1327,7 +1384,7 @@ input {
       }
     }
 
-    .emailSvg{
+    .emailSvg {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1393,13 +1450,15 @@ input {
       .icon {
         height: 40px;
         cursor: pointer;
-        img{
+
+        img {
           height: 100%;
           width: auto;
         }
       }
-      span{
-        font-family: 'Montserrat',sans-serif;
+
+      span {
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -1411,25 +1470,29 @@ input {
     }
   }
 }
+
 .login {
   width: 100%;
   height: 100vh;
   background: #F6F8FA;
   position: relative;
   overflow: hidden;
+
   .logoBg {
     border-radius: 50%;
     background-color: $mainColor;
     width: 1208px;
     height: 1208px;
     margin: -29% 0 0 -14%;
-    img{
+
+    img {
       width: 30%;
       margin: 55% 0 0 43%;
       height: auto;
       cursor: pointer;
     }
   }
+
   .sign-in {
     width: 30vw;
     height: fit-content;
@@ -1442,6 +1505,7 @@ input {
 
 
   }
+
   .anime-carousel-wrapper {
 
     .anime-carousel {
@@ -1498,6 +1562,7 @@ input {
         0% {
           left: 0;
         }
+
         100% {
           left: -100%;
         }
@@ -1516,6 +1581,7 @@ input {
         0% {
           right: 0;
         }
+
         100% {
           right: -100%;
         }
@@ -1948,7 +2014,9 @@ input {
                     border-radius: 8px;
                     border-color: #EDEDED;
 
-                    &:hover, &:active, &:focus {
+                    &:hover,
+                    &:active,
+                    &:focus {
                       box-shadow: 0px 3px 3px rgb(0 0 0 / 10%);
                       border: 1px solid #ffffff00 !important;
                     }
@@ -2073,7 +2141,9 @@ input {
                   border-radius: 8px;
                   border-color: #EDEDED;
 
-                  &:hover, &:active, &:focus {
+                  &:hover,
+                  &:active,
+                  &:focus {
                     box-shadow: 0px 3px 3px rgb(0 0 0 / 10%);
                     border: 1px solid #ffffff00 !important;
                   }
@@ -2228,12 +2298,15 @@ input {
                     }
                   }
 
-                  .css-1s2u09g-control, .css-1pahdxg-control {
+                  .css-1s2u09g-control,
+                  .css-1pahdxg-control {
                     height: auto;
                     border-radius: 8px;
                     border-color: #EDEDED;
 
-                    &:hover, &:active, &:focus {
+                    &:hover,
+                    &:active,
+                    &:focus {
                       box-shadow: 0px 3px 3px rgb(0 0 0 / 10%);
                       border: 1px solid #ffffff00 !important;
                     }
@@ -2468,7 +2541,8 @@ input {
                     cursor: pointer;
                     position: relative;
 
-                    &:nth-child(2), &:nth-child(5) {
+                    &:nth-child(2),
+                    &:nth-child(5) {
                       margin: 0 11px 10px 11px;
                     }
 
@@ -2610,12 +2684,15 @@ input {
             width: 37%;
           }
 
-          .left-site-fields, .right-site-fields {
+          .left-site-fields,
+          .right-site-fields {
             .email {
               margin-bottom: 20px;
             }
 
-            .phone, .email, .address {
+            .phone,
+            .email,
+            .address {
               p {
                 &:first-child {
                   font-weight: 500;
@@ -2878,7 +2955,9 @@ input {
               flex-direction: column;
               margin-bottom: 27px;
 
-              .email, .phone, .address {
+              .email,
+              .phone,
+              .address {
                 display: flex;
                 margin-bottom: 13px;
 
@@ -2899,7 +2978,10 @@ input {
                 }
               }
 
-              .skills, .languages, .contacts, .hobbies {
+              .skills,
+              .languages,
+              .contacts,
+              .hobbies {
                 .blue-resume-skill {
                   display: inline-block;
                   background-color: white;
@@ -3011,7 +3093,8 @@ input {
               }
             }
 
-            .educations, .experience {
+            .educations,
+            .experience {
               margin-bottom: 40px;
 
               p {
@@ -3204,7 +3287,9 @@ input {
                   width: 45%;
                 }
 
-                .email, .phone, .address {
+                .email,
+                .phone,
+                .address {
                   p {
                     font-weight: 300;
                     font-size: 10px;
@@ -3295,12 +3380,16 @@ input {
             border-bottom-right-radius: 12px;
           }
 
-          .content-left, .content-right {
+          .content-left,
+          .content-right {
             width: 63%;
             background: #2B3036;
             padding-bottom: 30px;
 
-            .skills, .educations, .experience, .languages {
+            .skills,
+            .educations,
+            .experience,
+            .languages {
               .main-title {
                 .fourth-resume-skills-line1 {
                   width: 10px;
@@ -3378,7 +3467,8 @@ input {
               }
             }
 
-            .educations, .experience {
+            .educations,
+            .experience {
               .education-name {
                 font-weight: 400;
                 font-size: 11px;
@@ -3486,7 +3576,9 @@ input {
             width: 37%;
             background: #ffffff;
 
-            .educations, .experience, .languages {
+            .educations,
+            .experience,
+            .languages {
               .main-title {
                 color: #000000 !important;
                 background: rgba(183, 183, 183, 0.28) !important;
@@ -3615,7 +3707,8 @@ input {
               padding-top: 5px;
               box-sizing: border-box;
 
-              .phone-box, .location-box {
+              .phone-box,
+              .location-box {
                 display: flex;
                 margin-bottom: 23px;
 
@@ -3737,7 +3830,8 @@ input {
         width: 100%;
         display: flex;
 
-        .template-body-left, .template-body-right {
+        .template-body-left,
+        .template-body-right {
           width: 50%;
           padding-left: 33px;
           box-sizing: border-box;
@@ -3761,7 +3855,8 @@ input {
             }
           }
 
-          .template-left-title, .template-right-title {
+          .template-left-title,
+          .template-right-title {
             width: 177px;
             height: 25px;
             font-style: normal;
@@ -3965,7 +4060,8 @@ input {
     border-radius: 12px;
     padding: 20px 30px 30px;
 
-    p, h2 {
+    p,
+    h2 {
       padding: 0;
       margin: 0;
     }
@@ -4065,7 +4161,8 @@ input {
         text-transform: capitalize;
       }
 
-      .left-content, .right-content {
+      .left-content,
+      .right-content {
         width: 30%;
         margin-top: 40px;
         border-right: 1px solid rgba(0, 0, 0, 0.7);
@@ -4607,7 +4704,9 @@ input {
             margin-right: 10px;
             color: $mainColor;
 
-            &:hover, &:active, &:focus {
+            &:hover,
+            &:active,
+            &:focus {
               background: $mainColor;
 
               i {
@@ -4619,7 +4718,9 @@ input {
           &:last-child {
             color: #FF4444;
 
-            &:hover, &:active, &:focus {
+            &:hover,
+            &:active,
+            &:focus {
               background: #FF4444;
 
               i {
@@ -4628,7 +4729,9 @@ input {
             }
           }
 
-          &:hover, &:active, &:focus {
+          &:hover,
+          &:active,
+          &:focus {
             box-shadow: none;
             outline: none;
           }
@@ -4660,7 +4763,9 @@ input {
           color: $mainColor;
           transition: 0.3s linear;
 
-          &:hover, &:active, &:focus {
+          &:hover,
+          &:active,
+          &:focus {
             box-shadow: none;
             outline: none;
             opacity: 0.7;
@@ -4831,7 +4936,9 @@ input {
           height: 50px;
           border-radius: 8px;
 
-          &:hover, &:active, &:focus {
+          &:hover,
+          &:active,
+          &:focus {
             box-shadow: 0px 3px 3px rgb(0 0 0 / 10%);
             border: 1px solid #ffffff00 !important;
           }
@@ -4970,7 +5077,10 @@ input {
 
       .profile {
         .dropdown-toggle {
-          &:hover, &:active, &:focus {
+
+          &:hover,
+          &:active,
+          &:focus {
             background: rgba(0, 0, 0, 0) !important;
           }
 
@@ -4995,7 +5105,9 @@ input {
           padding-left: 0;
           padding-right: 0;
 
-          &:hover, &:active, &:focus {
+          &:hover,
+          &:active,
+          &:focus {
             background: rgba(0, 0, 0, 0) !important;
           }
 
@@ -5018,7 +5130,9 @@ input {
   display: flex;
   transition: all .5s ease-in-out;
 
-  .all-resumes, .cover-letters, .documents {
+  .all-resumes,
+  .cover-letters,
+  .documents {
     width: 100vw;
     position: relative;
     flex-shrink: 0;
@@ -5268,9 +5382,9 @@ input {
   margin-left: 255px;
   margin-top: 215px;
   z-index: 11 !important;
-background: linear-gradient(101.5deg, rgba(255, 255, 255, 0.2) 0%, rgba(29, 113, 184, 0.2) 100%), #FFFFFF;
-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15), inset 0px -5px 10px rgba(0, 0, 0, 0.1);
-border-radius: 12px;
+  background: linear-gradient(101.5deg, rgba(255, 255, 255, 0.2) 0%, rgba(29, 113, 184, 0.2) 100%), #FFFFFF;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15), inset 0px -5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 .talantsContainer1 {
@@ -5303,27 +5417,27 @@ border-radius: 12px;
 }
 
 .form-control0:hover {
-  border: 3px solid $mainColor !important;
+  border: 3px solid $mainColor  !important;
   background-color: #ffffff00 !important;
 }
 
 .form-control0:focus {
-  border: 3px solid $mainColor !important;
+  border: 3px solid $mainColor  !important;
   background-color: #ffffff00 !important;
 }
 
 
 
 .forSearchBtn {
-  border-color: $mainColor !important;
+  border-color: $mainColor  !important;
   color: #ffffff;
-  background-color: $mainColor !important;
+  background-color: $mainColor  !important;
 }
 
-.forSearchBtn22 {      
-  border-color: $mainColor !important;
+.forSearchBtn22 {
+  border-color: $mainColor  !important;
   color: #ffffff;
-  background-color: $mainColor !important;
+  background-color: $mainColor  !important;
 }
 
 .forSearchBtn33 {
@@ -5341,7 +5455,7 @@ border-radius: 12px;
 }
 
 .forSearchBtn:hover {
-  background-color: $mainColor !important;
+  background-color: $mainColor  !important;
 }
 
 .forSearchBtn1 {
@@ -5368,7 +5482,7 @@ border-radius: 12px;
   background: #FFFFFF;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  }
+}
 
 .cardPic1 {
   width: 57px;
@@ -5384,26 +5498,26 @@ border-radius: 12px;
   margin-top: 52px;
   margin-left: -130px;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .cardJobSuccess {
-height: 54px;
-border-left: 1px solid #CDCDCD;
-border-right: 1px solid #CDCDCD;
-padding-left: 20px;
-padding-right: 20px;
-margin-top: 20px;
-margin-left: 80px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
+  height: 54px;
+  border-left: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-left: 80px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .cardRange {
@@ -5416,45 +5530,45 @@ text-align: center;
 }
 
 .cardJob {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-margin-top: 4px;
-text-align: center;
-color: #808080;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 4px;
+  text-align: center;
+  color: #808080;
 }
 
 .cardHourly {
-height: 54px;
-border-right: 1px solid #CDCDCD;
-padding-left: 33px;
-padding-right: 33px;
-margin-top: 20px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 23px;
-line-height: 28px;
-text-align: center;
-color: #323232;
+  height: 54px;
+  border-right: 1px solid #CDCDCD;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #323232;
 }
 
 .cardHourlyText {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: #808080;
-margin-top: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #808080;
+  margin-top: 6px;
 }
 
 .cardJobs {
-padding-left: 20px !important;
-padding-right: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .cardLikeBtn {
@@ -5480,20 +5594,20 @@ padding-right: 20px !important;
 }
 
 .cardText {
-width: 850px;
-border-top: 1px solid #CDCDCD;
-border-bottom: 1px solid #CDCDCD;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 4px;
-margin-top: 20px;
-margin-left: 20px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-color: #000000;
+  width: 850px;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 4px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 }
 
 .cardPointer {
@@ -5508,19 +5622,19 @@ color: #000000;
 }
 
 .cardFigma {
-width: 79px;
-height: 34px;
-background: #FFFFFF;
-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-border-radius: 6px;
-margin-top: 20px;
-margin-left: 30px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: $mainColor;
+  width: 79px;
+  height: 34px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $mainColor;
 }
 
 .cardText1 {
@@ -5534,15 +5648,15 @@ color: $mainColor;
 }
 
 .cardLevel {
-margin-top: 26px;
-margin-left: 360px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-text-align: right;
-color: #808080;
+  margin-top: 26px;
+  margin-left: 360px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #808080;
 }
 
 .cardLevel1 {
@@ -5553,14 +5667,14 @@ color: #808080;
 }
 
 .cardYears {
-margin-top: 20px;
-margin-left: 30px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-color: $mainColor;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $mainColor;
 }
 
 .cardYears1 {
@@ -5590,42 +5704,42 @@ color: $mainColor;
   margin-left: 960px;
   margin-top: 40px;
   background: #FFFFFF;
-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-border-radius: 12px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   z-index: 9999;
 }
 
 .cardLoginText {
-margin-top: 40px;
-margin-left: 30px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 37px;
-color: #323232;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #323232;
 }
 
 .cardLoginText1 {
-margin-top: 10px;
-margin-left: 30px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #808080;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #808080;
 }
 
 .cardLoginText2 {
-cursor: pointer;
-margin-left: 30px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: $mainColor;
+  cursor: pointer;
+  margin-left: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $mainColor;
 }
 
 .inputSizing {
@@ -5668,14 +5782,14 @@ color: $mainColor;
 }
 
 .jobsCardText {
-margin-top: 20px;
-margin-left: 24px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 30px;
-color: $mainColor;
+  margin-top: 20px;
+  margin-left: 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: $mainColor;
 }
 
 .cardHourly1 {
@@ -5696,7 +5810,7 @@ color: $mainColor;
   margin-left: 0px !important;
 }
 
-.cardLikeBtnnn{
+.cardLikeBtnnn {
   margin-top: 0;
   margin-left: 63px;
   margin-bottom: 0;
@@ -5764,40 +5878,40 @@ color: $mainColor;
   z-index: 99;
   position: absolute;
   width: 450px;
-  height: 830px!important;
+  height: 830px !important;
   margin-top: 0px;
   margin-left: 1215px;
   background: linear-gradient(101.5deg, rgba(255, 255, 255, 0.2) 0%, rgba(29, 113, 184, 0.2) 100%), #FFFFFF;
-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-border-radius: 12px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 .filterBar1 {
   z-index: 99;
   position: absolute;
   width: 450px;
-  height: 865px!important;
+  height: 865px !important;
   margin-top: 0px;
   margin-left: 1215px;
   background: linear-gradient(101.5deg, rgba(255, 255, 255, 0.2) 0%, rgba(29, 113, 184, 0.2) 100%), #FFFFFF;
-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-border-radius: 12px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 .filterBtnApply {
-margin-left: 148px;
-margin-top: 30px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 20px;
-gap: 10px;
-width: 154px;
-height: 44px;
-border: 1px solid $mainColor;
-border-radius: 8px;
-cursor: pointer;
+  margin-left: 148px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 154px;
+  height: 44px;
+  border: 1px solid $mainColor;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .filterBtnApply0 {
@@ -5807,35 +5921,35 @@ cursor: pointer;
 }
 
 .filterBtnApplyText {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: $mainColor;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $mainColor;
 
 }
 
 .filterTextMain {
   margin-top: 20px;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 37px;
-text-align: center;
-color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
 }
 
 .filterTextMain1 {
   margin-top: 20px;
   margin-left: 30px;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-color: #323232;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .filterTextMain2 {
@@ -5870,7 +5984,7 @@ color: #323232;
   overflow-x: hidden;
   top: 17%;
   width: 960px;
-  height: 523px;    
+  height: 523px;
   list-style-type: none;
   z-index: 11 !important;
 }
@@ -5980,18 +6094,18 @@ color: #323232;
 }
 
 .accountChoosePic {
-    width: 35px;
-    height: 35px;
-    margin-top: -20px;
-    margin-left: 11px;
-    background-image: url("../../../public/images/talantsCardPic.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: 99;
-    position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: 11px;
+  background-image: url("../../../public/images/talantsCardPic.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 99;
+  position: absolute;
 }
 
-.jobLogin{
+.jobLogin {
   position: relative;
   width: 420px;
   height: 556px;
