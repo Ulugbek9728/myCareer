@@ -4,6 +4,8 @@ import RoutesPath from "../../routes/routes";
 import FilterCard from "../filter-card/filter-card";
 import logoBlue from "../images/logo-blue.svg";
 import JobCard from "../job-card/job-card";
+import dropDown from "../../img/drop-down.svg";
+import userPic from "../../img/user-picture.png";
 import "./logged-jobs.scss";
 
 function LoggedJobs() {
@@ -48,6 +50,17 @@ function LoggedJobs() {
                                     <div className="nav-link" data-bs-toggle="tab">Contact us</div>
                                 </li>
                             </ul>
+                            <div className="logged-talents__user-informations">
+                                <div className="logged-talents__user">
+                                    <img src={userPic} width="36" height="36" />
+                                    <span className="logged-talents__user-name">Michel R</span>
+                                    <img src={dropDown} width="13" height="7" />
+                                </div>
+                                <div className="logged-talents__language">
+                                    <span className="logged-talents__language-text">En</span>
+                                    <img src={dropDown} width="13" height="7" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
