@@ -25,7 +25,7 @@ const RoutesPath = {
   signUp:"/SignUp",
   complete:"/complete",
   companyCom:"/companyCom",
-
+  jobModalPageView:"jobModalPageView",
 };
 
 export default RoutesPath

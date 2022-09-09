@@ -1,0 +1,20 @@
+.job-modal__page-view {
+  & .navbar-home {
+    height: 170px;
+    padding-bottom: 0;
+  }
+}
+
+.job-modal__page-view--wrapper {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+
+  .job-modal__page {
+    padding-left: 0;
+  }
+
+  & .job-modal__sidebar-user {
+    margin-top: 0;
+  }
+}

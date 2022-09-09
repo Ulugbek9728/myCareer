@@ -32,6 +32,7 @@ import CompleteCompany from "./components/completeCampany/CompleteCompany";
 import ContactUs from "./components/ContactUs";
 import ContactUsPage from "./components/ContactUsPage";
 import NewJobs from "./components/postJop/NewJobs";
+import JobModalPageView from './components/job-modal-page-view/job-modal-page-view';
 
 const enhancer = connect(
     ({resumes: {doneResumes}}) =>
@@ -75,6 +76,7 @@ const App = props => {
                 <Route path={RoutesPath.NewTalants} element={<NewTalants/>}/>
                 <Route path={RoutesPath.Saved} element={<Saved/>}/>
                 <Route path={RoutesPath.signUpPage} element={<SignUpPage/>}/>
+                <Route path={RoutesPath.jobModalPageView} element={<JobModalPageView/>}/>
             </Routes>
             <ToastContainer/>
         </div>
