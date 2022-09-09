@@ -12,7 +12,6 @@ import {displayCircle} from "./actions/careerAction";
 import PostJop2 from "./components/postJop/postJop2";
 import PostJop3 from "./components/postJop/postJop3";
 import ProfileCompany from "./components/profile-company";
-import BestMatches from "./components/postJop/BestMatches";
 import NewJops from "./components/postJop/NewJops";
 import SavedJops from "./components/postJop/SavedJops";
 import {ToastContainer} from "react-toastify";
@@ -31,7 +30,8 @@ import CompleteForm from "./components/completeForm/CompleteForm";
 import CompleteCompany from "./components/completeCampany/CompleteCompany";
 import ContactUs from "./components/ContactUs";
 import ContactUsPage from "./components/ContactUsPage";
-import NewJobs from "./components/postJop/NewJobs";
+import ProfilPage from "./components/profil/profilPage";
+import Jops from "./components/postJop/Jops";
 
 const enhancer = connect(
     ({resumes: {doneResumes}}) =>
@@ -47,36 +47,37 @@ const App = props => {
             {/*<PostJop1/>*/}
             {/*<PostJop2/>*/}
             {/*<PostJop3/>*/}
-            {/*<BestMatches/>*/}
-            <Routes>
-                <Route path={RoutesPath.home} element={<Home/>}/>
-                <Route path={RoutesPath.login} element={<Login/>}/>
-                <Route path={RoutesPath.signUp} element={<SignUp/>}/>
-                <Route path={RoutesPath.templates} element={<Personalization/>}/>
-                <Route path={RoutesPath.complete} element={<CompleteForm/>}/>
-                <Route path={RoutesPath.companyCom} element={<CompleteCompany/>}/>
-                <Route path={RoutesPath.postJop} element={<PostJop/>}/>
-                <Route path={RoutesPath.postJop2} element={<PostJop2/>}/>
-                <Route path={RoutesPath.postJop3} element={<PostJop3/>}/>
-                <Route path={RoutesPath.jop} element={<BestMatches/>}/>
-                <Route path={RoutesPath.newJops} element={<NewJops/>}/>
-                <Route path={RoutesPath.savedJops} element={<SavedJops/>}/>
-                <Route onClick={()=>{ dispatch(displayCircle()) }} path={RoutesPath.postJop1} element={<PostJop1/>}/>
-                <Route path={RoutesPath.aboutUs} element={<AboutUs/>}/>
-                <Route path={RoutesPath.contactUspage} element={<ContactUsPage/>}/>
-                <Route path={RoutesPath.profileCompany} element={<ProfileCompany/>}/>
-                <Route element={<NotFound/>}/>
-                <Route path={RoutesPath.myCv} element={<MyCv/>}/>
-                <Route path={RoutesPath.editPassword} element={<EditPassword/>}/>
-                <Route path={RoutesPath.chatForFreelancer} element={<ChatForFreelancer/>}/>
-                <Route path={RoutesPath.chatForCompany} element={<ChatForCompany/>}/>
-                <Route path={RoutesPath.talants} element={<Talants/>}/>
-                <Route path={RoutesPath.bestMatches} element={<BestMatchesTalants/>}/>
-                <Route path={RoutesPath.NewTalants} element={<NewTalants/>}/>
-                <Route path={RoutesPath.Saved} element={<Saved/>}/>
-                <Route path={RoutesPath.signUpPage} element={<SignUpPage/>}/>
-            </Routes>
-            <ToastContainer/>
+            <ProfilPage/>
+            {/*<Jop/>*/}
+            {/*<Jops/>*/}
+            {/*<NewJops/>*/}
+            {/*<Routes>*/}
+            {/*    <Route path={RoutesPath.home} element={<Home/>}/>*/}
+            {/*    <Route path={RoutesPath.login} element={<Login/>}/>*/}
+            {/*    <Route path={RoutesPath.signUp} element={<SignUp/>}/>*/}
+            {/*    <Route path={RoutesPath.ProfilPage} element={<ProfilPage/>}/>*/}
+            {/*    <Route path={RoutesPath.templates} element={<Personalization/>}/>*/}
+            {/*    <Route path={RoutesPath.complete} element={<CompleteForm/>}/>*/}
+            {/*    <Route path={RoutesPath.companyCom} element={<CompleteCompany/>}/>*/}
+            {/*    <Route path={RoutesPath.postJop} element={<PostJop/>}/>*/}
+            {/*    <Route path={RoutesPath.postJop2} element={<PostJop2/>}/>*/}
+            {/*    <Route path={RoutesPath.postJop3} element={<PostJop3/>}/>*/}
+            {/*    <Route path={RoutesPath.savedJops} element={<SavedJops/>}/>*/}
+            {/*    <Route onClick={()=>{ dispatch(displayCircle()) }} path={RoutesPath.postJop1} element={<PostJop1/>}/>*/}
+            {/*    <Route path={RoutesPath.aboutUs} element={<AboutUs/>}/>*/}
+            {/*    <Route path={RoutesPath.contactUspage} element={<ContactUsPage/>}/>*/}
+            {/*    <Route element={<NotFound/>}/>*/}
+            {/*    <Route path={RoutesPath.myCv} element={<MyCv/>}/>*/}
+            {/*    <Route path={RoutesPath.editPassword} element={<EditPassword/>}/>*/}
+            {/*    <Route path={RoutesPath.chatForFreelancer} element={<ChatForFreelancer/>}/>*/}
+            {/*    <Route path={RoutesPath.chatForCompany} element={<ChatForCompany/>}/>*/}
+            {/*    <Route path={RoutesPath.talants} element={<Talants/>}/>*/}
+            {/*    <Route path={RoutesPath.bestMatches} element={<BestMatchesTalants/>}/>*/}
+            {/*    <Route path={RoutesPath.NewTalants} element={<NewTalants/>}/>*/}
+            {/*    <Route path={RoutesPath.Saved} element={<Saved/>}/>*/}
+            {/*    <Route path={RoutesPath.signUpPage} element={<SignUpPage/>}/>*/}
+            {/*</Routes>*/}
+            {/*<ToastContainer/>*/}
         </div>
     );
 };

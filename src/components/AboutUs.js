@@ -4,6 +4,8 @@ import {displayCircle} from "../actions/careerAction";
 import RoutesPath from "../routes/routes";
 import {Button} from "react-bootstrap";
 import {useNavigate} from "react-router";
+import VideoPlayer from "react-video-js-player"
+import Car from '../img/videoForWork.mp4'
 
 
 const enhancer = connect((
@@ -25,6 +27,7 @@ const AboutUs = (props) => {
         dispatch(displayCircle());
     }, []);
 
+    const videoSrc = Car;
 
 
     return (
@@ -96,7 +99,7 @@ const AboutUs = (props) => {
 
             <div className="about-page-box">
                 <div className="left">
-                    <video id="video1" src="./images/videoForWork.mp4" controls />
+                    <VideoPlayer src={videoSrc}/>
                 </div>
                 <div className="right">
                     <div className="box ">

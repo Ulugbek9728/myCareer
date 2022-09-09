@@ -1,91 +1,160 @@
 $mainColor: #1D71B8;
 
-.ContactUsPageBox{
-  position: absolute;
-  width: 1410px;
-  height: auto;
-  left: 255px;
-  top: 234px;
-  z-index: 11;
-  display: flex;
-  justify-content: space-between;
+.ContactUsPage{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #F6F8FA;
+  .ContactUsPageBox{
+    position: absolute;
+    width: 1410px;
+    left: 255px;
+    top: 234px;
+    z-index: 11;
+    display: flex;
+    justify-content: space-between;
 
-  .left{
-    padding-top: 7%;
-    button{
-      width: 570px;
-      height: 100px;
-      border: none;
-      margin: 15px 0;
+    .left{
+      padding-top: 7%;
+      button{
+        width: 570px;
+        height: 100px;
+        border: none;
+        margin: 15px 0;
+        background: #FFFFFF;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #323232;
+        img{
+          width: 40px;
+          height: auto;
+          margin-right: 20px;
+        }
+      }
+    }
+    .right{
+      width: 690px;
+      height: 620px;
       background: #FFFFFF;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      font-family: 'Montserrat',sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 37px;
-      color: #323232;
-      img{
-        width: 40px;
-        height: auto;
-        margin-right: 20px;
+      border-radius: 12px;
+      padding: 50px;
+      position: relative;
+
+      h2{
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #323232;
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+        color: #808080;
+        margin-bottom: 30px;
+      }
+      input{
+        height: 54px;
+        border-radius: 8px;
+      }
+      textarea{
+        border-radius: 8px;
+      }
+      button{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+        background: none;
+        width: 118px;
+        height: 44px;
+        border-radius: 8px;
+        position: absolute;
+        right: 30px;
+        bottom: 35px;
+
+        &:focus, &:hover, &:active {
+          box-shadow: none !important;
+          background: $mainColor;
+          color: #FFFFFF;
+        }
       }
     }
   }
-  .right{
-    width: 690px;
-    height: 620px;
-    background: #FFFFFF;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 50px;
-    position: relative;
-
-    h2{
-      font-family: 'Montserrat',sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 37px;
-      color: #323232;
-      margin-bottom: 10px;
-    }
-    p{
-      font-family: 'Montserrat',sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 21px;
-      color: #808080;
-      margin-bottom: 30px;
-    }
-    input{
-      height: 54px;
-      border-radius: 8px;
-    }
-    textarea{
-      border-radius: 8px;
-    }
-    button{
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 20px;
-      color: $mainColor;
-      border: 1px solid $mainColor;
-      background: none;
-      width: 118px;
-      height: 44px;
-      border-radius: 8px;
+  .patternn2 {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    right: -13%!important;
+    bottom: -40%;
+    img {
+      width: 100%;
       position: absolute;
-      right: 30px;
-      bottom: 35px;
 
-      &:focus, &:hover, &:active {
-        box-shadow: none !important;
-        background: $mainColor;
-        color: #FFFFFF;
+      &:nth-child(1) {
+        z-index: 5;
+      }
+
+      &:nth-child(2) {
+        left: 7vw;
+        top: 7vw;
+        width: 72%;
+        z-index: 4;
+      }
+
+      &:nth-child(3) {
+        left: 9.4vw;
+        top: 9.4vw;
+        width: 63.1%;
+        z-index: 8;
+        animation: pattern3 50s linear infinite;
+      }
+
+      &:nth-child(4) {
+        left: 15vw;
+        top: 15vw;
+        width: 40%;
+        z-index: 7;
+        animation: pattern4 50s linear infinite;
+      }
+
+      &:nth-child(5) {
+        left: 19vw;
+        top: 19.1vw;
+        width: 24%;
+        z-index: 6;
+        animation: pattern5 30s linear infinite;
+      }
+    }
+
+    @keyframes pattern5 {
+      0% {
+        transform: rotate(1turn);
+      }
+    }
+    @keyframes pattern4 {
+      0% {
+        transform: rotate(-1turn);
+      }
+    }
+    @keyframes pattern3 {
+      0% {
+        transform: rotate(1turn);
       }
     }
   }
 }
+
