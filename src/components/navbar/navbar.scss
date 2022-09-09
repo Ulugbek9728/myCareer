@@ -1,0 +1,43 @@
+$mainColor: #1D71B8;
+
+.nav{
+    position: relative;
+    .line{
+      width: 5px;
+      height: 80%;
+      background-color: $mainColor;
+      position: absolute;
+      top: 15%;
+      left: 45%;
+      z-index: 0;
+    }
+    .navtest{
+      z-index: 10;
+      margin-top: 10px;
+      background-color: inherit;
+      width: 50px ;
+      height: 50px;
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      .dots{
+        cursor: pointer;
+        width: 30px !important;
+        height: 30px;
+        border: 5px solid $mainColor;
+        background-color: #F5F5F7;
+        border-radius: 50%;
+        transition: 0.4s linear;
+
+      }
+    }
+    .active{
+      .dots{
+        transition: 0.4s linear;
+        border: 10px solid $mainColor;
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+  }

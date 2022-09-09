@@ -18,14 +18,7 @@
 $mainColor: #1D71B8;
 
 .porfilFrilanser {
-  background-color: #F5F5F7 !important;
-  position: relative;
   padding-bottom: 30px;
-
-
-  .Navportfolio {
-    position: relative !important;
-  }
 
   #sectionProfil {
     width: 100vw;
@@ -741,7 +734,7 @@ $mainColor: #1D71B8;
       z-index: 2;
       width: 510px;
       padding-left: 60px;
-      background: linear-gradient(90deg, #F5F5F7 54.27%, rgba(245, 245, 247, 0) 100%);
+      background: linear-gradient(90deg, #F6F8FA 54.27%, rgba(245, 245, 247, 0) 100%);
       .totalEarningsBox{
         display: flex;
         justify-content: space-between;

@@ -5,7 +5,8 @@
 }
 
 $mainColor: #1D71B8;
-%allButton{
+
+%allButton {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -16,7 +17,9 @@ $mainColor: #1D71B8;
   height: 44px;
   border-radius: 8px;
 
-  &:focus, &:hover, &:active {
+  &:focus,
+  &:hover,
+  &:active {
     box-shadow: none !important;
     background: $mainColor;
     color: #FFFFFF;
@@ -67,7 +70,10 @@ $mainColor: #1D71B8;
 }
 
 .form-control {
-  &:hover, &:active, &:focus {
+
+  &:hover,
+  &:active,
+  &:focus {
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
     border: 1px solid #ffffff00 !important;
   }
@@ -137,7 +143,9 @@ a {
 input {
   background: #FFFFFF !important;
 
-  &:focus, &:hover, &:active {
+  &:focus,
+  &:hover,
+  &:active {
     background: #FFFFFF !important;
   }
 }
@@ -263,7 +271,7 @@ input {
   margin-top: -13px;
 }
 
-.pattern99{
+.pattern99 {
   width: 46vw;
   height: 30vw;
   position: fixed;
@@ -311,11 +319,13 @@ input {
       transform: rotate(1turn);
     }
   }
+
   @keyframes pattern4 {
     0% {
       transform: rotate(-1turn);
     }
   }
+
   @keyframes pattern3 {
     0% {
       transform: rotate(1turn);
@@ -323,7 +333,7 @@ input {
   }
 }
 
-.pattern11{
+.pattern11 {
   width: 46vw;
   height: 46vw;
   position: fixed;
@@ -371,11 +381,13 @@ input {
       transform: rotate(1turn);
     }
   }
+
   @keyframes pattern4 {
     0% {
       transform: rotate(-1turn);
     }
   }
+
   @keyframes pattern3 {
     0% {
       transform: rotate(1turn);
@@ -393,26 +405,37 @@ input {
 }
 
 .app-wrapper {
-  background: #F6F8FA;
   width: 100%;
   transition: .4s linear;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #F6F8FA;
+    z-index: -9!important;
+  }
 }
 
 .home-wrapper_box{
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   background: #F6F8FA;
+  overflow: hidden;
   transition: .4s linear;
+
+
 }
 
 .home-wrapper {
   width: 100%;
-  height: 400vh;
   position: relative;
   overflow: hidden;
 
-  .pattern{
+  .pattern {
     width: 46vw;
     height: 46vw;
     position: fixed;
@@ -573,14 +596,13 @@ input {
   }
 
   .main-home-page-box {
-    .sloy-manu {
-      display: none;
-    }
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     position: relative;
-
+    .sloy-manu {
+      display: none;
+    }
     .home-circle {
       width: 44vw;
       height: 44vw;
@@ -5310,6 +5332,12 @@ border-radius: 12px;
   margin-left: 40px;
 }
 
+.form-control {
+  border-color: $mainColor;
+  background-color: #ffffff !important;
+}
+
+
 .form-control0 {
   border-color: $mainColor;
   background-color: #ffffff00 !important;
@@ -5324,6 +5352,8 @@ border-radius: 12px;
   border: 3px solid $mainColor !important;
   background-color: #ffffff00 !important;
 }
+
+
 
 .forSearchBtn {
   border-color: $mainColor !important;
@@ -5364,6 +5394,8 @@ border-radius: 12px;
   background-color: #ffffff00 !important;
   color: $mainColor;
 }
+
+
 
 .personalCard {
 position: absolute;
@@ -5912,6 +5944,7 @@ color: #323232;
 }
 
 .allCards1 {
+  padding: 0 30px 0 40px;
   position: absolute;
   overflow: scroll;
   overflow-x: hidden;

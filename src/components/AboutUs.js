@@ -27,7 +27,6 @@ const AboutUs = (props) => {
         dispatch(displayCircle());
     }, []);
 
-    const videoSrc = Car;
 
 
     return (
@@ -99,7 +98,7 @@ const AboutUs = (props) => {
 
             <div className="about-page-box">
                 <div className="left">
-                    <VideoPlayer src={videoSrc}/>
+                    <video id="video1" src="./images/videoForWork.mp4" controls />
                 </div>
                 <div className="right">
                     <div className="box ">
