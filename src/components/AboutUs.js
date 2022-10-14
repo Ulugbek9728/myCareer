@@ -4,8 +4,6 @@ import {displayCircle} from "../actions/careerAction";
 import RoutesPath from "../routes/routes";
 import {Button} from "react-bootstrap";
 import {useNavigate} from "react-router";
-import VideoPlayer from "react-video-js-player"
-import Car from '../img/videoForWork.mp4'
 
 
 const enhancer = connect((

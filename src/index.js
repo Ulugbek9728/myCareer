@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import "bootstrap/dist/css/bootstrap.min.css"
 import './assets/styles/main.scss';
 import './assets/styles/aboutUs.scss';
 import './assets/styles/my-resume.scss';
@@ -21,7 +20,8 @@ import store from './store/store';
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-toastify/dist/ReactToastify.css';
-
+import NewTalants from './components/talants/NewTalants';
+import NewJobs from './components/postJop/NewJobs';
 
 
 

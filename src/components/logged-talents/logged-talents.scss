@@ -12,6 +12,8 @@ $mainColor: #1d71b8;
 
   .logos-wrapper {
     margin-top: 20px;
+    // margin-right: 224px;
+
     &::before {
       content: "";
       width: 705px;
@@ -23,17 +25,15 @@ $mainColor: #1d71b8;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1 ;
-    }
-    img{
-      position: absolute;
-      z-index: 1;
+      z-index: -1;
     }
   }
 
   .homeNavbar {
     width: 63%;
     padding: 8px 0;
+    position: relative;
+
     & .navbar-wrapper {
       width: 896px !important;
       display: flex;
@@ -126,8 +126,6 @@ $mainColor: #1d71b8;
 }
 
 .logged-talents__container {
-  display: flex;
-  justify-content: space-between;
   width: 1410px;
   margin: 0 auto;
 
@@ -204,6 +202,10 @@ $mainColor: #1d71b8;
 
 // Initial
 
+.logged-talents__container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .logged-talents__sidebar {
   width: 450px;
@@ -219,12 +221,11 @@ $mainColor: #1d71b8;
 
 .page__navbar {
   width: 376px;
-  position: relative;
-  z-index: 1;
 }
 
 .page__navbar-list {
   width: fit-content;
+  display: inline-block;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -268,7 +269,6 @@ $mainColor: #1d71b8;
 }
 
 .page__body {
-
   margin: 0;
   padding: 0;
 }

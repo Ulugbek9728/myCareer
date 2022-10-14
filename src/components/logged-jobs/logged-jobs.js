@@ -10,7 +10,7 @@ import "./logged-jobs.scss";
 
 function LoggedJobs() {
     const navigate = useNavigate();
-    const [isClicked, setClicked] = useState(1);
+    const [isClicked, setClicked] = useState(1)
 
     function handleClick(evt) {
         const eventValue = evt.target.dataset.id;

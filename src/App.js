@@ -31,8 +31,6 @@ import CompleteForm from "./components/completeForm/CompleteForm";
 import CompleteCompany from "./components/completeCampany/CompleteCompany";
 import ContactUs from "./components/ContactUs";
 import ContactUsPage from "./components/ContactUsPage";
-import ProfilPage from "./components/profil/profilPage";
-import Jops from "./components/postJop/Jops";
 import NewJobs from "./components/postJop/NewJobs";
 import JobModalPageView from './components/job-modal-page-view/job-modal-page-view';
 
@@ -50,17 +48,11 @@ const App = props => {
             {/*<PostJop1/>*/}
             {/*<PostJop2/>*/}
             {/*<PostJop3/>*/}
-            {/*<ProfilPage/>*/}
-            {/*<Jop/>*/}
-            {/*<Jops/>*/}
-            {/*<NewJops/>*/}
-
             {/*<BestMatches/>*/}
             <Routes>
                 <Route path={RoutesPath.home} element={<Home/>}/>
                 <Route path={RoutesPath.login} element={<Login/>}/>
                 <Route path={RoutesPath.signUp} element={<SignUp/>}/>
-                <Route path={RoutesPath.ProfilPage} element={<ProfilPage/>}/>
                 <Route path={RoutesPath.templates} element={<Personalization/>}/>
                 <Route path={RoutesPath.complete} element={<CompleteForm/>}/>
                 <Route path={RoutesPath.companyCom} element={<CompleteCompany/>}/>
