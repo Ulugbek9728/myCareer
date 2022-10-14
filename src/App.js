@@ -41,8 +41,6 @@ const enhancer = connect(
 const App = props => {
     const dispatch = useDispatch();
     const [topSpace, setTopSpace] = useState(0);
-
-
     return (
         <div className="app-wrapper">
             {/*<PostJop1/>*/}
